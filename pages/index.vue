@@ -1,21 +1,40 @@
 <template>
     <main class="pt-56">
 
-        <div class="bg-green-500 h-96 bg-hero">
+        <div class="bg-green-500 h-96 bg-hero relative">
+            <div class="max-w-lg py-20 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 left-20 bg-orange-600/60 text-white">
+                <h3 class="text-2xl mb-3 font-semibold">            Are you looking to place someone?</h3>
+                    <p>We are experts in supporting individuals with complex mental health conditions and behaviours that may challenge.</p>
+
+            </div>
           
         </div>
+        <section class="py-10">
+
+            <div class="max-w-2xl m-auto text-center">
+                <h2 class="text-3xl text-gray-700 my-4 font-semibold">  Wilmore Care</h2>
+
+                <p class="leading-7 text-lg">
+                   is committed to providing exceptional supported living, residential, respite, and home care services.
+                </p>
+            </div>
+        </section>
         <section>
             <div class="flex gap-4 flex-col md:flex-row justify-between max-w-[1600px] m-auto px-10 py-20 lg:px-10  ">
                 <div class="flex-[28%] text-lg text-gray-500 mx-auto max-w-6xl">
-                    <p class="my-0">At Iris Care Group we provide the full pathway of services for people with learning disabilities, Autism, mental health issues and personality disorder, along with neurodegenerative conditions and Acquired Brain Injury. We provide treatment and care for complex mental health conditions.
-                        </p>
+                    <p class="my-0">
+                        <strong class="text-black">
+                            Wilmore Care
+                        </strong>
+                         is committed to providing exceptional supported living, residential, respite, and home care services. 
+
+                         </p>
                         <p class="my-3 font-normal">
+                            <strong class="text-black">
+                                Mission
+                            </strong>
+                            Our mission is to empower individuals with autism spectrum disorder, learning disabilities, physical disabilities, dementia, age-related needs, acquired brain injuries, and mental health conditions to lead fulfilling, independent lives within their communities.
 
-                        Our domiciliary care, supported living, residential and nursing services allow people to live independent, and meaningful lives in the community, whilst our specialist hospitals provide, assessment, care and treatment. Our Special Educational Needs college provides residential and day placements to young people and adults.
-                    </p>
-<p class="my-3">
-
-                        Our multi-disciplinary teams are able to operate across all service areas to provide dedicated therapeutic care as required.
                     </p>
                     <p class="my-3">
                   
@@ -26,7 +45,7 @@
                         <img src="/assets/images/testimonials/testimonials_banner_1000px-620x395.jpg" alt="" class="w-full h-full object-cover">
 
                     </div>
-                    <div class="py-20 text-center px-10 rounded-b-2xl  text-gray-800 ">
+                    <div class="py-20   text-center px-10 rounded-b-2xl  text-gray-800 ">
                         <h3 class="text-3xl text-gray-900">Our Services                        </h3>
                         <p class="text- font-medium leading-7">Find out more about all our services, the people we support, and how to make a referral.
 
@@ -34,17 +53,19 @@
                         <nuxt-link to="#" class="bg-theme text-white py-3 px-6 mx-auto my-4 w-max block rounded-3xl font-medium">Locations & Serrvices</nuxt-link>
                     </div>
                 </div>
-                <div class="flex-[28%] p-3 bg-red-400 rounded-2xl overflow-hidden">
+                <div class="flex-[28%] p-3 bg-gray-100 border rounded-2xl overflow-hidden">
                     <div class="h-96 w-full pb-10 rounded-t-2xl overflow-hidden">
-                        <img src="/assets/images/testimonials/testimonials_banner_1000px-620x395.jpg" alt="" class="w-full h-full object-cover">
+                        <img src="/assets/images/testimonials/cdf_090519_ge_lshc_st_peters_082-2-retouched-620x395.jpg" alt="" class="w-full h-full object-cover">
 
                     </div>
-                    <div class="py-20 text-center px-10 rounded-b-2xl bg-red-400  ">
-                        <h3 class="text-3xl text-white">Our Services                        </h3>
-                        <p class="text-white leading-7">Find out more about all our services, the people we support, and how to make a referral.
+                    <div class="py-20 text-center px-10 rounded-b-2xl text-gray-800">
+                        <h3 class="text-3xl text-gray-900">Work for Us                      </h3>
+                        <p class=" leading-7">
+                            Make a positive difference in people's lives, and, build a meaningful career.
+
 
                         </p>
-                        <nuxt-link to="#" class="bg-white py-3 px-4 m-auto w-max block rounded-3xl font-medium">Locations & Serrvices</nuxt-link>
+                        <nuxt-link to="#" class="bg-theme text-white py-3 px-4 mx-auto my-4 w-max block rounded-3xl font-medium">Locations & Serrvices</nuxt-link>
                     </div>
                 </div>
                 
@@ -57,23 +78,23 @@
             </div>
         </section>
         <section class="px-5">
-            <div class="flex max-w-[1600px] m-auto justify-between gap-">
-                <div class="py-16 h-[560px]  flex-1 ">
-                    <div class="bg-ref h-full">
+            <div class="flex max-w-[1600px] flex-col sm:flex-row m-auto justify-between gap-">
+                <div class="py-16 h-[560px] flex-1 ">
+                    <div class="bg-ref h-96 md:h-full ">
                         
                     </div>
                     
                 </div>
-                <div class="max-w-[30%] w-full bg-theme border p-8 text-white rounded-2xl"> 
-                    <h2 class="text-3xl">  Make a Referral
+                <div class="w-full md:max-w-[30%] bg-theme border p-8 text-white rounded-2xl"> 
+                    <h2 class="text-3xl ">  Make a Referral
                     </h2>
-                    <p class="font-normal my-6 leading-7" >
+                    <p class="font-normal my-6 leading-7 l" >
                         We are experts in supporting those with complex needs and challenging behaviour. Our multi-disciplinary teams are able to operate across all service areas to provide dedicated therapeutic care as required.
 
 We take                 pride in offering safe, compassionate and empowering care and support in high quality environments.
 
                     </p>
-                    <nuxt-link to="/contact" class="bg-white text-theme font-semibold rounded-3xl py-3 px-7 block w-max">
+                    <nuxt-link to="/contact" class="bg-white text-theme f font-semibold rounded-3xl py-3 px-7 block w-max">
                         Contact us to discuss a referral now
 
                     </nuxt-link>

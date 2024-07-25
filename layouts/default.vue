@@ -2,28 +2,30 @@
 <template>
      
       <main class="relative"> 
-        <header class="fixed w-full">
+        <header class="fixed w-full z-50">
           <div class="py-7 px-10 bg-theme flex justify-between w-full items-center">
-  <!-- Header content -->
-
-  <nuxt-link to="/" class="text-3xl font-semibold text-white">
-    WilmoreCare
-  </nuxt-link>
+              <!-- Header content -->
+                 <nuxt-link to="/" class="text-3xl font-semibold text-white">
+                  WilmoreCare
+                </nuxt-link>
 
   <ul :class="isShowMenu ? mobileViewOn : mobileViewOff " class="bg-theme/80 flex-1 px-2 left-0 max-w-sm w-full  lg:min-w-max fixed top-0  h-full lg:static lg:w-full lg:flex flex-wrap text-white text-xl gap-8 items-center  lg:py-0 lg:px-5">
 
-    <li class="whitespace-nowrap mb-3 py-3 lg:mb-0"><nuxt-link  to="/services" class="whitespace-nowrap mb-3  block py-2 px-2">Our Services</nuxt-link ></li>
       <li class="whitespace-nowrap mb-3 lg:mb-0  py-3"><nuxt-link to="/about" class="whitespace-nowrap mb-3  block py-2 px-2">About Us</nuxt-link> </li>
+      <li class="whitespace-nowrap mb-3 py-3 lg:mb-0"><nuxt-link  to="/services" class="whitespace-nowrap mb-3  block py-2 px-2">Our Services</nuxt-link ></li>
 
       <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link to="/professional" class="whitespace-nowrap mb-3  block py-2 px-2">Professionals</nuxt-link></li>
     <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link to="/people_we_support" class="whitespace-nowrap mb-3  block py-2 px-2">Peeople we support</nuxt-link></li>
     <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link to="/careers" class="whitespace-nowrap mb-3 block py-2 px-2">Work for us</nuxt-link></li>
+    <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link to="/contact-us" class="whitespace-nowrap mb-3 block py-2 px-2">Contactr us</nuxt-link></li>
+    <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link to="/careers" class="whitespace-nowrap mb-3 block py-2 px-5 bg-[#63b6b3] rounded-3xl text-white">Get Referals</nuxt-link></li>
+
 
     
 
 
   </ul>
-  <nuxt-link class="text-white cursor-pointer block lg:hidden" @click="toggleMenu">
+  <nuxt-link class="text-white cursor-pointer  block lg:hidden" @click="toggleMenu">
     <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg"><path d="M19 18c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1s.45-1 1-1h14m0-2h-14c-1.654 0-3 1.346-3 3s1.346 3 3 3h14c1.654 0 3-1.346 3-3s-1.346-3-3-3zM19 11c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1s.45-1 1-1h14m0-2h-14c-1.654 0-3 1.346-3 3s1.346 3 3 3h14c1.654 0 3-1.346 3-3s-1.346-3-3-3zM19 4c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1s.45-1 1-1h14m0-2h-14c-1.654 0-3 1.346-3 3s1.346 3 3 3h14c1.654 0 3-1.346 3-3s-1.346-3-3-3z"></path></svg>
   </nuxt-link>
           </div>
@@ -33,11 +35,11 @@
               <span class="border border-white p-4 rounded-full">
                 <svg class="h-2.5 w-2.5 lg:w-6 lg:h-6" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"  xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               </span>
-              <div>
-                <p>Client Referal Email:</p>
-                <p>referrals@WilmoreCare.co.uk</p>
+              <a class="hover:underline cursor-pointer">
+                <span>Client Referal Email: </span>
+                <span>referrals@WilmoreCare.co.uk</span>
                 
-              </div>
+              </a>
             </div>
 
             <div class="flex items-center gap-5 mb-4">

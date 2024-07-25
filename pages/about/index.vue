@@ -1,24 +1,170 @@
 <!-- pages/about.vue -->
 <template>
-    <main class="pt-56">
-      <div class="bg-green-500 h-96 bg-hero">
+    <main class="pt-56 wrapper">
+      <div class="bg-green-500 h-96 relative bg-hero">
         <!-- <h3>Text</h3>
         main -->
+        <div class="max-w-lg w-full text-center py-20 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 left-20 bg-orange-600/60 text-white">
+          <h3 class="text-3xl mb-3 font-semibold">  About Us</h3>
+
+          
+      </div>
     </div>
 
     <section class="py-40 px-10 lg:px-2">
-        <div class="max-w-4xl m-auto text-xl leading-10 text-gray-600 font-normal text-left">
+        <div class="max-w-7xl m-auto text-xl leading-10 text-gray-600 font-normal text-left">
 
-          <div class="max-w-4xl mx-auto font-normal">
-            <p class="font-normal">
-              Iris Care Group is the largest independent health and social care provider operating across the South West of England and South Wales.
+          <div class="max-w-7xl mx-auto font-normal">
 
-The Iris Care Group launched in May 2023 through the merging of two companies, Holmleigh Care (since 1999) and Ludlow Street Healthcare (since 2005).
+            <div class="grid grid-cols-2 gap-4 my-20"> 
+              <div>
+                <h2 class="text-4xl font-semibold my-5">Who We Are</h2>
+
+                <p class="font-normal text-lg leading-8">
+                  At Wilmore, we specialise in working with adults that have a diverse range of needs specific to each of them, including autism, learning disabilities, physical disabilities, sensory impairments (sensory processing needs), mental health support needs, acquired brain injuries and age-related diseases. <br/><br/> Our focus is on enabling individuals to live independently, according to their personal preferences and needs, in a supportive and caring environment.
+    
+                 </p>
+              </div>
+      
+              <div class="border-2 rounded overflow-hidden p-0.5 border-gray-600">
+                <img src="/assets//images/about-us/iStock-1191469015-1024x683.jpg" alt="" class="w-full">
+
+              </div>
+            </div>
+
+
+            <div class="grid grid-cols-2 gap-4 my-20"> 
+              
+      
+              <div class="border-2 rounded overflow-hidden p-0.5 border-gray-600">
+                <img src="/assets//images/about-us/iStock-1191469015-1024x683.jpg" alt="" class="w-full">
+
+              </div>
+              <div>
+                <h2 class="text-4xl font-semibold my-5">Professional, Resourceful and Personable Services</h2>
+
+                <p class="font-normal text-lg leading-8">
+                  Our Supported Living and Residential services combine warm and homely accommodation with professional and friendly support. <br/> This approach enables people with a range of physical disabilities, learning disabilities, mental health needs, autism and complex behavioural needs to live independent and fulfilling lives.
+    
+                 </p>
+              </div>
+            </div>
+
+            
+            <div class="grid grid-cols-2 gap-4 my-20"> 
+              <div>
+                <h2 class="text-4xl font-semibold my-5">Standard of Superior Individual Service
+
+                </h2>
+
+                <p class="font-normal text-lg leading-8">
+                  We exist to support our service users to live healthy, self-fulfilling and independent lives in society through a tailored and holistic approach to creating a supportive, caring, nurturing and family-type environment where they can thrive, flourish, and achieve their full potential. We achieve this by promoting the standard of excellence which embraces fundamental principles of good care practice.
+                  </p>
+                
+              </div>
+              
+      
+              <div class="border-2 rounded overflow-hidden p-0.5 border-gray-600">
+                <img src="/assets//images/about-us/iStock-1191469015-1024x683.jpg" alt="" class="w-full">
+
+              </div>
+             
+            </div>
+
+            <div class="grid grid-cols-2 gap-4"> 
+              
+      
+              <div class="border-2 rounded overflow-hidden p-0.5 border-gray-600">
+                <img src="/assets//images/about-us/iStock-1191469015-1024x683.jpg" alt="" class="w-full">
+
+              </div>
+              <div>
+                <h2 class="text-4xl font-semibold my-5">
+                  Partnership and stakeholders
+</h2>
+
+                <p>
+              
+                  We adopt partnerships working with all our stakeholders and employ highly skilled and dedicated care workers suitable for each person's specific needs. We have an experienced and efficient team who supports our service users according to their needs. The staff are carefully selected and undergo training that further empowers them to provide the best care services to the individuals we support living independently with comfort.
+                      
+                 </p>
+              </div>
+            </div>
+  
+             
+            <p class="my-3 leading-8 text-base">
+
+            
+              
             </p>
           </div>
            
         </div>
     </section>
+
+    <section class="bg-[#00a0a6] py-20 core-section">
+      <div class="max-w-7xl m-auto"> 
+        <div class="grid grid-cols-2 gap-[5%]">
+          <div>
+            <img src="/assets/images/psychologist-620x395.jpg" alt="">
+          </div>
+          <div>
+            <h2 class="text-3xl text-center font-semibold text-gray-50">Our Core Values</h2>
+
+            <ul class="text-gray-100">
+              <li class="my-10">
+                <strong class="text-gray-50"> Empowerment - </strong>
+               We empower our service users to achieve their highest level of independence.
+
+              </li>
+              <li class="my-10">
+                <strong class="text-gray-100"> Personalization - </strong>
+                 Each care plan is tailored to the individual’s unique needs and aspirations.
+
+              </li>
+              <li class="my-10">
+                <strong class="text-gray-100 font-bold">  Community Integration -- </strong>
+                We facilitate community engagement and relationship-building.
+
+              </li>
+              <li class="my-10">
+                <strong class="text-gray-100 font-bold">   Respect -- </strong>
+               We maintain the dignity and respect of every individual we support.
+
+              </li>
+              <li class="my-10">
+                <strong class="text-gray-100"> Empowerment -- </strong>
+               We empower our service users to achieve their highest level of independence.
+
+              </li>
+            </ul>
+            
+            </div>
+        </div>
+
+        <div class="max-w-4xl m-auto my-8">
+          <h2 class="text-center text-3xl font-semibold text-gray-50">
+            Our Team
+
+          </h2>
+          <p class="text-center leading-8 text-gray-50">
+Our team consists of highly trained and experienced healthcare professionals dedicated to providing compassionate and individualized care. We ensure that our staff members are carefully selected and undergo rigorous training to meet the highest standards of care.
+
+          </p>
+        </div>
+        <div class="max-w-4xl m-auto mt-20">
+          <h2 class="text-center text-3xl font-semibold text-gray-50">
+            Collaboration
+          </h2>
+          <p class="text-center leading-8 text-gray-100">
+            We collaborate with healthcare professionals, families, and communities to ensure a holistic approach to care, providing the best outcomes for our service users.
+
+          </p>
+        </div>
+
+      </div>
+    </section>
+    
     
     <section class="px-5 my-8">
       <div class="flex flex-col lg:flex-row max-w-[1600px] m-auto justify-between gap-">
@@ -127,6 +273,12 @@ The Iris Care Group launched in May 2023 through the merging of two companies, H
 
   
   <style scoped>
+.core-section{
+  background: linear-gradient(#00a1a6  ), url('/public/background/back-column-3-1-2.png');
+}
+  .wrapper{
+    background-image: url("/public/background/back-column-3-1-2.png");
+  }
 
   .mission-section a.link::after{
     content: "";

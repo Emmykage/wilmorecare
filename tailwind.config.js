@@ -15,6 +15,11 @@ export default {
       },
       backgroundColor: {
         theme: "#104d77"
+      },
+      gridTemplateColumns: {
+        "layout-styles":  "3fr 1fr"
+        
+        
       }
     },
   },
