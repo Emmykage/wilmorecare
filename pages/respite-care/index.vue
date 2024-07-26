@@ -34,19 +34,7 @@
                     </li>
                 </ul>
 
-                <h3>Benefits</h3>
-                <ul>
-                    <li>⦁	Peace of Mind: Caregivers can rest assured knowing their loved ones are in safe hands.
-                    </li>
-                    <li>
-                        ⦁	Flexible Scheduling: Respite care is available for short durations or extended periods, depending on needs.
-
-                    </li>
-                    <li>
-                        ⦁	Supportive Environment: Individuals in respite care receive the same quality and attention as in our regular care services.
-
-                    </li>
-                </ul>
+               
             </div>
 
         </div>

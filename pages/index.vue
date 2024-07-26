@@ -77,6 +77,18 @@
                 <a href="" class="text-3xl text-blue-950 font-semibold"> click here.</a>
             </div>
         </section>
+
+        <section class=" py-20 my-20 bg-box">
+            <div class="max-w-7xl m-auto">
+                <h2 class="text-6xl font-semibold text-gray-700">Our Objectives</h2>
+                <p class="pl-10 my-6">We strive to improve the quality of life for individuals with learning disabilities.
+                    </p>
+                    <p class="pl-32"> We aim to foster stronger friendships, relationships, and community connections for our service users.
+                    </p>
+            </div>
+        </section>
+
+
         <section class="px-5">
             <div class="flex max-w-[1600px] flex-col sm:flex-row m-auto justify-between gap-">
                 <div class="py-16 h-[560px] flex-1 ">
@@ -147,6 +159,10 @@ export default {
 </script>
 
 <style>
+
+.bg-box{
+    background: linear-gradient(#63b6b359, #63b6b300 ), url('/public/background/back-column-3-1-2.png');
+}
 
 .card img{
 }

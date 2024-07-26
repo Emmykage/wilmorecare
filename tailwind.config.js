@@ -20,6 +20,9 @@ export default {
         "layout-styles":  "3fr 1fr"
         
         
+      },
+      borderWidth: {
+        "3": "3px"
       }
     },
   },
