@@ -1,22 +1,22 @@
 <!-- pages/about.vue -->
 <template>
-    <main class="pt-56 wrapper">
-      <div class="bg-green-500 h-96 relative bg-hero">
+    <main class="pt-64 md:pt-52 wrapper">
+      <div class="bg-gray-100 h-96 relative bg-hero">
         <!-- <h3>Text</h3>
         main -->
-        <div class="max-w-lg w-full text-center py-20 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 left-20 bg-orange-600/60 text-white">
+        <div class="max-w-lg w-full text-center py-10 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
           <h3 class="text-3xl mb-3 font-semibold">  About Us</h3>
 
           
       </div>
     </div>
 
-    <section class="py-40 px-10 lg:px-2">
+    <section class="py-20 md:py-40 px-10 lg:px-2">
         <div class="max-w-7xl m-auto text-xl leading-10 text-gray-600 font-normal text-left">
 
           <div class="max-w-7xl mx-auto font-normal">
 
-            <div class="grid grid-cols-2 gap-4 my-20"> 
+            <div class="grid md:grid-cols-2 gap-4"> 
               <div>
                 <h2 class="text-4xl font-semibold my-5">Who We Are</h2>
 
@@ -26,21 +26,21 @@
                  </p>
               </div>
       
-              <div class="border-2 rounded overflow-hidden p-0.5 border-gray-600">
-                <img src="/assets//images/about-us/iStock-1191469015-1024x683.jpg" alt="" class="w-full">
+              <div class=" rounded overflow-hidden p-0.5 border-gray-600">
+                <img src="/assets//images/about-us/iStock-1191469015-1024x683.jpg" alt="" class="w-full border-2 border-gray-200 p-1 rounded-2xl">
 
               </div>
             </div>
 
 
-            <div class="grid grid-cols-2 gap-4 my-20"> 
+            <div class="grid md:grid-cols-2 gap-4 my-20"> 
               
       
-              <div class="border-2 rounded overflow-hidden p-0.5 border-gray-600">
-                <img src="/assets//images/about-us/iStock-1191469015-1024x683.jpg" alt="" class="w-full">
+              <div class="order-2 md:order-1 rounded overflow-hidden p-0.5 border-gray-600">
+                <img src="/assets//images/Residential-care-home-provides-personal-care.jpg" alt=""  class="w-full border-2 border-gray-200 p-1 rounded-2xl">
 
               </div>
-              <div>
+              <div class="order-1">
                 <h2 class="text-4xl font-semibold my-5">Professional, Resourceful and Personable Services</h2>
 
                 <p class="font-normal text-lg leading-8">
@@ -51,7 +51,7 @@
             </div>
 
             
-            <div class="grid grid-cols-2 gap-4 my-20"> 
+            <div class="grid md:grid-cols-2 gap-4 my-20"> 
               <div>
                 <h2 class="text-4xl font-semibold my-5">Standard of Superior Individual Service
 
@@ -64,21 +64,21 @@
               </div>
               
       
-              <div class="border-2 rounded overflow-hidden p-0.5 border-gray-600">
-                <img src="/assets//images/about-us/iStock-1191469015-1024x683.jpg" alt="" class="w-full">
+              <div class="rounded overflow-hidden p-0.5">
+                <img src="/assets//images//psychologist-620x395.jpg" alt="" class="w-full border-2 border-gray-200 p-1 rounded-2xl">
 
               </div>
              
             </div>
 
-            <div class="grid grid-cols-2 gap-4"> 
+            <div class="grid md:grid-cols-2 gap-4"> 
               
       
-              <div class="border-2 rounded overflow-hidden p-0.5 border-gray-600">
-                <img src="/assets//images/about-us/iStock-1191469015-1024x683.jpg" alt="" class="w-full">
+              <div class="md:order-1 order-2 overflow-hidden p-0.5 border-gray-600">
+                <img src="/assets//images/pva8626-620x395.jpg" alt="" class="w-full border-2 border-gray-200 p-1 rounded-2xl">
 
               </div>
-              <div>
+              <div class="order-1">
                 <h2 class="text-4xl font-semibold my-5">
                   Partnership and stakeholders
 </h2>
@@ -104,9 +104,9 @@
 
     <section class="bg-[#00a0a6] py-20 core-section">
       <div class="max-w-7xl m-auto"> 
-        <div class="grid grid-cols-2 gap-[5%]">
-          <div>
-            <img src="/assets/images/psychologist-620x395.jpg" alt="">
+        <div class="grid md:grid-cols-2 gap-[5%]">
+          <div class="order-2 md:order-1 mb-10">
+            <img src="/assets/images/about-us/OUR-COMMITMENT.jpeg" alt="">
           </div>
           <div>
             <h2 class="text-3xl text-center font-semibold text-gray-50">Our Core Values</h2>
@@ -195,7 +195,7 @@ Our team consists of highly trained and experienced healthcare professionals ded
       
   </section>
   <section class="bg-theme text-white py-20 px-10 mission-section" >
-    <div class="mx-auto max-w-7xl flex justify-between text-center">
+    <div class="mx-auto max-w-7xl flex flex-col md:flex-row justify-between text-center">
       <div>
         <div class="bg-yellow-600 w-16 mx-auto h-16 flex items-center justify-center rounded-full">
           <span>
@@ -227,7 +227,8 @@ Our team consists of highly trained and experienced healthcare professionals ded
           Our Vision and Values
 
         </h4>
-        <p class="max-w-xl m-auto px-4 text-base ">We are proud that everyone has worked together to define a vision and values that we are all proud to commit oursleves to.
+        <p class="max-w-xl m-auto px-4 text-base ">Our vision is for Wilmore Care to be the best place in the UK for individuals to receive care and support.
+
 
         </p>
         <div class="relative">
@@ -250,15 +251,15 @@ Our team consists of highly trained and experienced healthcare professionals ded
 
     <section class="bg-theme text-white py-44 text-center">
         <div class="text-center max-w-2xl m-auto">
-            <h3 class="text-3xl">Talk to the Iris Care Group team
+            <h3 class="text-3xl">Talk to the wilmorecare Group
             </h3>
             <p class="">
-                If you have any questions about our services including how to make a referral or the career opportunities with Iris Care Group please complete our Get in Touch form.
+                If you have any questions about our services including how to make a referral or the career opportunities with WilmoreCare Group please complete our Get in Touch form.
 
 
             </p>
 
-            <a href="/contact_us" class="font-medium  my-6 block text-theme w-max m-auto bg-white py-3 px-5 rounded-3xl">Contact Us</a>
+            <nuxt-link to="/contact-us" class="font-medium  my-6 block text-theme w-max m-auto bg-white py-3 px-5 rounded-3xl">Contact Us</nuxt-link>
         </div>
     </section>
 
@@ -290,6 +291,11 @@ Our team consists of highly trained and experienced healthcare professionals ded
     left: 0;
 
   }
-  /* Page-specific styles */
-  </style>
+  .bg-hero{
+    background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/about-us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }  </style>
   

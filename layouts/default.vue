@@ -5,27 +5,34 @@
         <header class="fixed w-full z-50">
           <div class="py-7 px-10 bg-theme flex justify-between w-full items-center">
               <!-- Header content -->
-                 <nuxt-link to="/" class="text-3xl font-semibold text-white">
-                  WilmoreCare
+                 <nuxt-link to="/" class="text-3xl font-semibold text-white h-20 ">
+                  <img src="/assets/images/logos/Full Logo Coloured PNG_rework.png" alt="wilmorecare logo" class="w-full h-full"/>
                 </nuxt-link>
 
-  <ul :class="isShowMenu ? mobileViewOn : mobileViewOff " class="bg-theme/80 flex-1 px-2 left-0 max-w-sm w-full  lg:min-w-max fixed top-0  h-full lg:static lg:w-full lg:flex flex-wrap text-white text-xl gap-8 items-center  lg:py-0 lg:px-5">
+  <ul :class="isShowMenu ? mobileViewOn : mobileViewOff " class="bg-theme/80 flex-1 px-2 left-0 max-w-sm w-full lg:min-w-max fixed top-0  h-full lg:static lg:w-full lg:flex flex-wrap text-white text-sm gap-8 items-center  lg:py-0 lg:px-5 navigation">
 
-      <li class="whitespace-nowrap mb-3 lg:mb-0  py-3"><nuxt-link to="/about" class="whitespace-nowrap mb-3  block py-2 px-2">About Us</nuxt-link> </li>
-      <li class="whitespace-nowrap mb-3 py-3 lg:mb-0"><nuxt-link  to="/services" class="whitespace-nowrap mb-3  block py-2 px-2">Our Services</nuxt-link ></li>
-
-      <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link to="/professional" class="whitespace-nowrap mb-3  block py-2 px-2">Professionals</nuxt-link></li>
-    <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link to="/people_we_support" class="whitespace-nowrap mb-3  block py-2 px-2">Peeople we support</nuxt-link></li>
-    <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link to="/careers" class="whitespace-nowrap mb-3 block py-2 px-2">Work for us</nuxt-link></li>
-    <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link to="/contact-us" class="whitespace-nowrap mb-3 block py-2 px-2">Contactr us</nuxt-link></li>
-    <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link to="/careers" class="whitespace-nowrap mb-3 block py-2 px-5 bg-[#63b6b3] rounded-3xl text-white">Get Referals</nuxt-link></li>
+    <li class="list whitespace-nowrap py-0 mb-3 lg:mb-0   relative"><nuxt-link @click="toggleMenu" to="/about" class="whitespace-nowrap mb-3  block py-2 px-2">About Us</nuxt-link> </li>
+    <li class="list whitespace-nowrap mb-3 py-0 lg:mb-0 relative"><nuxt-link @click="toggleMenu" to="/services" class="whitespace-nowrap mb-3 flex items-center justify-between gap-3 py-2 px-2">Our Services 
+      <svg class="transition-all duration-300 ease-in-out" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></nuxt-link >
+        <ul class="static lg:absolute py-10 px-4 bg-theme/80 lg:bg-theme border sub-list">
+          <li><nuxt-link @click="toggleMenu" to="/supported-living" class="whitespace-nowrap mb-3  block py-2 px-2">Supported Living</nuxt-link></li>
+          <li class=""><nuxt-link @click="toggleMenu" to="/home-care" class="whitespace-nowrap mb-3  block py-2 px-2">Home Care Us</nuxt-link></li>
+          <li><nuxt-link @click="toggleMenu" to="/respite-care" class="whitespace-nowrap mb-3  block py-2 px-2">Respite Care</nuxt-link></li>
+          <li><nuxt-link @click="toggleMenu" to="/residential-care" class="whitespace-nowrap mb-3  block py-2 px-2">Residential Care</nuxt-link></li>
+        </ul>
+    </li>
+    <!-- <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link @click="toggleMenu" to="/professional" class="whitespace-nowrap mb-3  block py-2 px-2">Professionals</nuxt-link></li> -->
+    <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0  relative"><nuxt-link @click="toggleMenu" to="/people_we_support" class="whitespace-nowrap mb-3  block py-2 px-2">Peeople we support</nuxt-link></li>
+    <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/careers" class="whitespace-nowrap mb-3 block py-2 px-2">Work for us</nuxt-link></li>
+    <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/contact-us" class="whitespace-nowrap mb-3 block py-2 px-2">Contact us</nuxt-link></li>
+    <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/get-referals" class="whitespace-nowrap mb-3 block py-2 px-5 bg-[#63b6b3] rounded-3xl text-white">Get Referals</nuxt-link></li>
 
 
     
 
 
   </ul>
-  <nuxt-link class="text-white cursor-pointer  block lg:hidden" @click="toggleMenu">
+  <nuxt-link class="text-gray-600 cursor-pointer  block lg:hidden" @click="toggleMenu">
     <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg"><path d="M19 18c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1s.45-1 1-1h14m0-2h-14c-1.654 0-3 1.346-3 3s1.346 3 3 3h14c1.654 0 3-1.346 3-3s-1.346-3-3-3zM19 11c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1s.45-1 1-1h14m0-2h-14c-1.654 0-3 1.346-3 3s1.346 3 3 3h14c1.654 0 3-1.346 3-3s-1.346-3-3-3zM19 4c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1s.45-1 1-1h14m0-2h-14c-1.654 0-3 1.346-3 3s1.346 3 3 3h14c1.654 0 3-1.346 3-3s-1.346-3-3-3z"></path></svg>
   </nuxt-link>
           </div>
@@ -95,8 +102,8 @@
     name: "App",
     data(){
       return{
-        mobileViewOn: " pt-20 pb-40 block",
-        mobileViewOff: " pt-20 pb-40 px-10 hidden ",
+        mobileViewOn: " pt-20 pb-40 block left-0",
+        mobileViewOff: " pt-20 pb-40 px-10 hidden -left-full ",
         isShowMenu: false
         
       }
@@ -117,7 +124,42 @@
   body{
     font-family: poppins, sans-serif;
   }
+  .list a::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    display: block;
+    background: rgb(99 182 179);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out
+
+
+  }
+  .list a:hover::before{
+    width: 100%;
+  }
+  .list a{
+    padding: 16px;
+  }
+  .list a.router-link-active{
+    color: rgb(99 182 179);
+
+  }
+  .list a.router-link-active::before{
+    width: 100%;
+  }
   /* Scoped styles for the layout */
+  .list .sub-list{
+    display: none;
+  }
+  .list:hover svg{
+    transform: rotate(180deg);
+  }
+.list:hover .sub-list{
+  display: block;
+}
 
   
 li a:hover{

@@ -1,94 +1,350 @@
 <template>
-  <main class="pt-56">
-    <div class="bg-green-500 h-96  bg-hero">
-      <!-- <h3>Text</h3>
-      main -->
+  <main class=" pt-64 md:pt-56 wrapper">
+    <div class="bg-gray-200 h-96 bg-hero relative">
+      <div class="max-w-lg w-full text-center py-12 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 left-20 bg-orange-600/60 text-white">
+          <h3 class="text-3xl mb-3 font-semibold">  Who We Support</h3>
+
+          
+      </div>
   </div>
-  <section class="py-32 px-5 md:px-20">
-    <div class="lg:grid-cols-layout-styles  layout-styles  gap-3 md:gap-10 grid">
+
+  <section class="lg:py-24 py-10 bg-gray-100/10 px-5">
+    <div class="max-w-7xl m-auto my-10">
+      <h2 class="text-center text-4xl font-semibold text-gray-600 my-4">Personalised Support for Individuals </h2>
+<p class="text-center text-lg font-semibold text-gray-600 my-9">We provide tailored support to people living with a variety of health conditions, which include:
+</p>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-[10%] mb-20">
+  <ul class="list-disc list-inside px-3 text-gray-600">
+    <li class="py-2">	outreach Learning disabilities 
+    </li>
+    <li class="py-2">	Autism spectrum disorders
+    </li>
+    <li class="py-2">
+      	Mental health conditions
+
+
+    </li>
+    </ul>
+    <ul class="list-disc list-inside px-3 text-gray-600">
+    <li class="py-2">	Neuro-disabilities</li>
+    <li class="py-2">	Acquired brain injuries
+    </li>
+    <li class="py-2">	Spinal injuries
+    </li>
+    <li class="py-2">	Physical disabilities
+    </li>
+    </ul>
+    <ul class="list-disc list-inside px-3 text-gray-600">
+    <li class="py-2">	Age-related needs
+    </li>
+    <li class="py-2">	Dementia</li>
+    <li class="py-2">Huntington’s disease
+    </li>
+    <li class="py-2">	Parkinson’s disease
+    </li>
+
+  </ul>
+</div>
+    </div>
+
+    <div class="m-auto max-w-7xl">
+      <div class="grid gap-10 lg:grid-cols-2">
+      <div class="border p-3 rounded-3xl bg-[#00a0a6]/10 h-[400px]">
+        <img src="@/assets/images/psychologist-620x395.jpg" alt="goals image" class="w-full border-2 border-[#00a0a6] rounded-xl h-full">
+      </div>
+      
       <div>
-        <div class=" mx-auto max-w-[1700px]  gap-6 ">
-            <div class="max-w-3xl">
+        <h3 class="text-2xl text-gray-600 font-semibold mb-4">Our Goal for Our Service Users
+        </h3>
+        <p class="font-semibold text-gray-600">We have the following goals for our service users:
+        </p>
+        <ul class=" list-inside list-disc px-5">
+          <li class="py-2">	Experiencing new and enriching experiences
+          </li>
+          <li class="py-2">	Receiving the right support to make decisions about the direction of their lives
+          </li>
+          <li class="py-2">	Participating, influencing, and being accepted as members of their communities
+          </li>
+          <li class="py-2">	Remaining safe
+          </li>
+          <li class="py-2">Remaining healthy physically and mentally
+          </li>
+          <li class="py-2">Being able to express their own cultural and spiritual beliefs
+          </li>
+          <li class="py-2">Being able to take risks positively
+          </li>
+          <li class="py-2">Having meaning and loving relationships outside of their paid support.
+          </li>
 
-            <p class="mb-10 font-semibold text-gray-700">
-              At Iris Care Group every person is treated as an individual with his or her own beliefs and needs. With your involvement we will draw up an individualised plan of care for you, enabling you to be actively involved in your own recovery, rehabilitation or care action plan.
-            </p>
+        </ul>
+      </div>
+</div>
 
-            <p class="mb-10 text-gray-600 font-medium">
-              Where some individuals may find it difficult to take a personal involvement in developing their own care plan, we actively involve families, care co-ordinators and advocates.
-            </p>
-            <p class="font-medium text-gray-600">
-              Whichever service they are at, we aim to provide all the people we support with a high quality of life by respecting six basic values and setting ourselves six clear aims:
-            </p>
+    </div>
+  </section>
+  <section class="py-24 px-5 bg-[#00a0a6]">
 
-          </div>
-        </div>
-        <div class="max-w-3xl border">
-          <img src="/assets/images/kdj1258.2-lsh-ourvaluesinfographic-148x148mm-081019-01-1024x1024.png" alt="" srcset="">
-        </div>
-        <div class="py-10">
+  <div class="max-w-[1400px] m-auto">
+    <div class=" m-auto">
+      <h3 class="text-5xl text-center text-gray-50 m-10 font-bold  ">Reasons to Choose Us      </h3>
+      <p class="my-7 leading-8 text-gray-100 font-semibold">Wilmore Care’s care offering is bespoke and person-centred to promote people's dignity, privacy and human rights. Our care is founded on love and support for people with disabilities and we aim to make a positive impact in the social and healthcare sector. At Wilmore Care, we work tirelessly in creating an environment that uplifts our service users and helps them achieve independent living.
+      </p>
 
-          <h2 class="text-4xl my-3">Frequently asked questions </h2>
-          <p class=" leading-7 text-lg" >We have listed some of the questions we get asked most frequently by the people we support and their families. If there is anything else you would like to know, just email us at info@iriscaregroup.uk.
+      <div class="flex md:grid-cols-2">
+
+        
+        <ul class="max-w-5xl reason-lis list-inside nter">
+          <li class="py-2 leading-7 relative text-gray-100">
+            <span class="mr-3 text-green-900"> &#10004; </span>
             
-          </p>
-
-          <ul class="max-w-3xl my-10">
-            <li class="border my-5 overflow-hidden w-full rounded-tl-[35px] pl-10 rounded-bl-[35px] rounded-tr-3xl rounded-br-3xl bg-gray-200">
-              <div class="my-auto px-6 border-b border-gray-600 h-16 flex items-center"><p class="w-full font-semibold text-black">Will i have my own room</p><div><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></div> </div>
-              <div class="px-5 py-10"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem id iste quas facere ea. Dolore tempore nulla similique, aperiam molestiae magni id ipsam reprehenderit doloribus aut est facilis consequatur quaerat! Debitis quis facilis expedita laudantium, incidunt tenetur cum ipsam. Exercitationem!</p>
-                All our staff join us because they care passionately about helping the individuals we suppprt to get the most out of their lives. They are a funny, diverse bunch as you might expect.
-
-                Depending on the service location, the people we care for may have their own primary care team or be buddied up with a key worker.
-                
-                With your help (or the help of your family, care co-ordinator or Advocate) the care team or key worker will draw up an individualised recovery, rehabilitation or care plan for you. This will enable you (or them) to be actively involved in your own personalized programme.
-                
-                Additionally, we have a large team of other specialist staff who are available as needed such as Psychologists and Psychiatrists, Education Specialists, Occupational Therapists and Dietitians.
-                
-                All our staff are fully trained, receive a comprehensive two-week long induction when they join us and attend regular additional training courses.
-              </div>
+            <strong class="flex-1">Customized Care: </strong>
+             Our holistic and personalized approach ensures that each service user's needs and goals are met.
             </li>
-            <li class="border overflow-hidden w-full rounded-tl-[35px] pl-10 rounded-bl-[35px] rounded-tr-3xl rounded-br-3xl bg-gray-200">
-              <div class="my-auto px-6 border-b border-gray-600 h-16 flex items-center"><p class="w-full font-semibold text-black">Do you put anyone in seclusion?</p><div><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></div> </div>
-              <div class="px-5 py-10"><p>We never use seclusion. Although some of the people we support can have very challenging behaviour, we prefer to train our staff to spot these incidents early and use techniques to avoid or diffuse potential incidents.
-                </p>
-              </div>
+            <li class="py-2 leading-7 text-gray-100">
+              <span class="mr-3 text-green-900"> &#10004; </span>
+
+              <strong>	Trusted Carers:</strong>
+               Our experienced and well-trained team members deliver compassionate care.
+
+            </li>
+            <li class="py-2 leading-7 text-gray-100">
+              <span class="mr-3 text-green-900"> &#10004; </span>
+
+              <strong>Diverse and Complex Condition Care: </strong>	 Our carers have specialist training to provide safe care for complex needs.
+
+            </li>
+            <li class="py-2 leading-7 text-gray-100">
+              <span class="mr-3 text-green-900"> &#10004; </span>
+
+              <strong>
+                Family Inclusion:
+
+              </strong>
+               We involve families and relatives in care plans for comprehensive support and providing them with the needed assurance.
+
+            </li>
+            <li class="py-2 leading-7 text-gray-100">
+              <span class="mr-3 text-green-900"> &#10004; </span>
+
+              <strong>
+                Family Inclusion: 
+              </strong>
+               Our services include family and relatives in care packages to provide them with the needed assurance.
+
+            </li>
+            <li class="py-2 leading-7 text-gray-100">
+              <span class="mr-3 text-green-900"> &#10004; </span>
+
+              <strong>
+                24-Hour Support: 
+              </strong>
+               Our services are available around the clock, ensuring continuous care.
+
+            </li>
+            <li class="py-2 leading-7 text-gray-100">
+              <span class="mr-3 text-green-900"> &#10004; </span>
+
+              <strong>
+                Highly Recommended: 
+              </strong>
+           We are commended by service users and their families.
+
+            </li>
+            <li class="py-2 text-gray-100">
+              <span class="mr-3 text-green-900"> &#10004; </span>
+
+              <strong>
+                Collaboration: 
+              </strong>
+               Our care and support package work with individuals, communities, relevant societies and multi-agency through information sharing and confidentiality to improve outcomes.
+
+
+            </li>
+            <li class="py-2 leading-7 text-gray-100">
+              <span class="mr-3 text-green-900"> &#10004; </span>
+
+              <strong>
+
+              </strong>
+              	Homely environments designed with stimulating environments
+
+            </li>
+            <li class="py-2 leading-7 text-gray-100">
+              <span class="mr-3 text-green-900"> &#10004; </span>
+
+              	We pay attention to detail
+
+            </li>
+            <li class="py-2 leading-7 text-gray-100">
+              <span class="mr-3 text-green-900"> &#10004; </span>
+              Support our residents to be more independent over time.
+
+          </li>
+        </ul>
+        <div class="max-w-sm">
+          <img src="/assets//images/kdj1258.2-lsh-ourvaluesinfographic-148x148mm-081019-01-1024x1024.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+   
+  </section>
+  <section class="px-5 py-20 bg-box">
+    <!-- <div class="m-auto max-w-7xl">
+      <h2>
+        Vision
+        </h2>
+        <p>
+
+        Our vision is for Wilmore Care to be the best place in the UK for individuals to receive care and support.
+        
+        We want to be the trusted partner of many families, local authorities and health trusts, by providing specialist support and care services for many people with a wide range of needs every year 
+        
+        </p>
+    </div> -->
+
+    <div class="m-auto max-w-7xl">
+      <h2 class="text-4xl tracking-widest">
+        Our Purpose and values
+
+      </h2>
+      <div class="grid md:grid-cols-2 gap-10 ">
+        <div>
+          <div>
+
+          <span class="text-gray-500 text-sm font-semibold my-5">PURPOSE</span>
+          <p class="pl-3 text-gray-600 ">
+            We believe we can care for and support anyone irrespective of their condition to live a better and independent life.
+    
+          </p>
+          <p class="pl-3 text-gray-600 ">
+            Hence, we make the following promises to our stakeholders.
+    
+          </p>
+          <ul class="list-inside list-disc px-5  text-gray-700 ">
+            <li>
+                Delivery of consistent and quality care
+    
+            </li>
+            <li>
+                Delivery of care in a compliant way
+    
+            </li>
+            <li>	Going above and beyond in delivering care
             </li>
           </ul>
         </div>
-       </div>
 
-    <div class="border px-2">
-      <div class="rounded-xl w-full h-96 max-w-xl p-5 bg-theme">
-        <img src="/assets/images/kdj129-lshg-a3-poster-humanrights-230215.jpg" alt="certification" class="h-full w-full"/>
 
+          <div class="my-3">
+            <span class="text-gray-500 text-sm font-semibold">VALUES</span>
+
+            <p class="pl-3 text-gray-600 font-medium leading-7">
+    
+            The ethos, values, attitudes and behaviours of Wilmore Care leaders and care staff ensure that people using our services live confident, inclusive and empowered lives.
+          </p>
+    
+          
+    
+          </div>
+
+        </div>
+
+
+      <div class="border">
+        <img src="/assets/images/about-us/OUR-COMMITMENT.jpeg" alt="">
       </div>
+     
     </div>
 
+    <div class="grid md:grid-cols-2 m-auto max-w-7xl my-24">
+      <div>
+        <img src="" alt="">
+      </div>
+
+    <div class="text-justify font-semibold text-gray-600 leading-8">
+      <p>
+        We Care for clients the way they want it and in their best interest 
+        </p>
+        <p>
+          We are Trustworthy we are highly recommended
+
+        </p>
+        <p>
+          We use Initiative we are creative in our approach and interventions
+
+        </p>
+        <p>
+          We are Reliable you can rely on us
+
+        </p>
+        <p>
+          We are Empathic towards service users and their families.
+
+        </p>
+        <p>
+          We are Inclusive with all stakeholders to ensure holistic care
+
+        </p>
+        <p>
+          We are Eager to try new solutions in our care packages
+
+      </p>
+    </div>
+    
   </div>
 
-  </section>
 
-  <section>
 
-    
+
+    </div>
+
+    <div class="max-w-7xl m-auto">
+      
+
+      <div>
+        <p>
+          Our success relies on the specific important factors that have been incorporated into our business model such as:
+
+        </p>
+        <p>
+          ⦁	The ability to attract quality staff and place them in suitable employment.
+
+        </p>
+        <p>
+          ⦁	Open and transparent pricing.
+
+        </p>
+        <p>
+          ⦁	Customer service that is second to none.
+
+        </p>
+        <p>
+          ⦁	A clear and concise marketing offer to target directly potential service users
+
+        </p>
+      </div>
+    </div>
   </section>
+  
   
   <social-media-instruction/>
   <CTA/>
 
-    </main>
+</main>
    
 </template>
 
 <script>
 import CTA from '~/components/call_to_action/CTA.vue'
+import ImageCard from '~/components/ImageCard.vue'
 import SocialMediaInstruction from '~/components/socials/social-media-instruction.vue'
 export default {
-  components: { CTA, SocialMediaInstruction },
+  components: { CTA, SocialMediaInstruction, ImageCard },
   data() {
     return {
-    //   dataProperties
+      // imageSrc: require('@/assets/images/psychologist-620x395.jpg')
     }
   },
   methods: {
@@ -98,5 +354,22 @@ export default {
 </script>
 
 <style scoped>
+.reason-list li::before{
+  content: "\2713";
+  position: absolute;
+  left: 0;
+
+
+}
+.wrapper{
+  background-image: url("/public/background/back-column-3-1-2.png");
+}
+.bg-hero{
+  background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/Intensive-Support-Services-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+} 
 
 </style>

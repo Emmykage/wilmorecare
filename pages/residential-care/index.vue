@@ -1,7 +1,7 @@
 <template>
-  <main class="pt-56">
+  <main class="pt-64 md:pt-40 ">
     <!-- Your content here -->
-    <div class="bg-green-500 h-96 bg-hero relative">
+    <div class="bg-gray-100 h-96 bg-hero relative">
         <div class="max-w-lg w-full text-center py-12 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 left-20 bg-orange-600/60 text-white">
             <h3 class="text-3xl mb-3 font-semibold">  Residential Care</h3>
   
@@ -120,5 +120,12 @@ export default {
 main{
     background: url('/public/background/back-column-3-drk-2.png');
 }
+.bg-hero{
+    background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/ocs_introduction_banner_1000px.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  } 
 
 </style>

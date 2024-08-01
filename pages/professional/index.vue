@@ -1,8 +1,11 @@
 <template>
-  <main class="pt-56">
-    <div class="bg-green-500 h-96 bg-hero">
-        <!-- <h3>Text</h3>
-        main -->
+  <main class="pt-64 md:pt-40">
+    <div class="bg-green-500 h-96 bg-hero relative">
+        <div class="max-w-lg w-full text-center py-20 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
+            <h3 class="text-3xl mb-3 font-semibold"> Contact Us</h3>
+  
+            
+        </div>
     </div>
 
     <section class="py-40 px-10 lg:px-2">
@@ -38,7 +41,7 @@
 
             </p>
 
-            <a href="/contact_us" class="font-medium  my-6 block text-theme w-max m-auto bg-white py-3 px-5 rounded-3xl">Contact Us</a>
+            <nuxt-link to="/contact-us" class="font-medium  my-6 block text-theme w-max m-auto bg-white py-3 px-5 rounded-3xl">Contact Us</nuxt-link>
         </div>
     </section>
 

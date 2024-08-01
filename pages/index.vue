@@ -1,20 +1,20 @@
 <template>
     <main class="pt-56">
 
-        <div class="bg-green-500 h-96 bg-hero relative">
-            <div class="max-w-lg py-20 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 left-20 bg-orange-600/60 text-white">
+        <div class="bg-green-500 h-[700px] bg-hero relative">
+            <div class="max-w-lg py-20 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
                 <h3 class="text-2xl mb-3 font-semibold">            Are you looking to place someone?</h3>
                     <p>We are experts in supporting individuals with complex mental health conditions and behaviours that may challenge.</p>
 
             </div>
           
         </div>
-        <section class="py-10">
+        <section class="py-10 px-5">
 
             <div class="max-w-2xl m-auto text-center">
-                <h2 class="text-3xl text-gray-700 my-4 font-semibold">  Wilmore Care</h2>
+                <h2 class="text-3xl text-gray-600 my-4 font-semibold">  Wilmore Care</h2>
 
-                <p class="leading-7 text-lg">
+                <p class="leading-7 text-gray-500 font-semibold text-lg">
                    is committed to providing exceptional supported living, residential, respite, and home care services.
                 </p>
             </div>
@@ -23,14 +23,14 @@
             <div class="flex gap-4 flex-col md:flex-row justify-between max-w-[1600px] m-auto px-10 py-20 lg:px-10  ">
                 <div class="flex-[28%] text-lg text-gray-500 mx-auto max-w-6xl">
                     <p class="my-0">
-                        <strong class="text-black">
+                        <strong class="text-gray-600">
                             Wilmore Care
                         </strong>
                          is committed to providing exceptional supported living, residential, respite, and home care services. 
 
                          </p>
                         <p class="my-3 font-normal">
-                            <strong class="text-black">
+                            <strong class="text-gray-600">
                                 Mission
                             </strong>
                             Our mission is to empower individuals with autism spectrum disorder, learning disabilities, physical disabilities, dementia, age-related needs, acquired brain injuries, and mental health conditions to lead fulfilling, independent lives within their communities.
@@ -78,12 +78,12 @@
             </div>
         </section>
 
-        <section class=" py-20 my-20 bg-box">
+        <section class="px-5 py-20 my-20 bg-box">
             <div class="max-w-7xl m-auto">
                 <h2 class="text-6xl font-semibold text-gray-700">Our Objectives</h2>
-                <p class="pl-10 my-6">We strive to improve the quality of life for individuals with learning disabilities.
+                <p class="pl-10 my-6 text-gray-500 font-medium">We strive to improve the quality of life for individuals with learning disabilities.
                     </p>
-                    <p class="pl-32"> We aim to foster stronger friendships, relationships, and community connections for our service users.
+                    <p class="pl-20 md:pl-32  text-gray-500 font-medium"> We aim to foster stronger friendships, relationships, and community connections for our service users.
                     </p>
             </div>
         </section>
@@ -120,10 +120,10 @@ We take                 pride in offering safe, compassionate and empowering car
                     </div>
             </div>
                 <div>
-                    <p>The Iris Care Group also encompasses Care at Home a domiciliary care at home provider, for more details click here.</p>
+                    <p>Wilcare also encompasses Care at Home a domiciliary care at home provider, for more details click here.</p>
                 </div>
             </div>
-            <div class="max-w-7xl m-auto" >
+            <!-- <div class="max-w-7xl m-auto" >
                 <h2 class="text-theme text-center text-3xl">Follow us on social media</h2>
                 <p class="text-center">Discover all the day to day ways we help the people we support to live their lives to the fullest:
 
@@ -141,8 +141,9 @@ We take                 pride in offering safe, compassionate and empowering car
                   
 
                     </div>
-            </div>
+            </div> -->
         </section>
+        <social-media-instruction/>
         <CTA/>
 
 </main>
@@ -152,17 +153,19 @@ We take                 pride in offering safe, compassionate and empowering car
 
 <script>
 import CTA from '~/components/call_to_action/CTA.vue'
+import SocialMediaInstruction from '~/components/socials/social-media-instruction.vue'
 export default {
-  components: { CTA },
+  components: { CTA, SocialMediaInstruction },
 
 }
 </script>
 
-<style>
+<style scoped>
 
-.bg-box{
-    background: linear-gradient(#63b6b359, #63b6b300 ), url('/public/background/back-column-3-1-2.png');
-}
+.bg-hero{
+    background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/iStock-1200583427-e1715614469710.jpg');;
+  
+  }
 
 .card img{
 }
@@ -174,9 +177,5 @@ export default {
     background-position: center;
 
 }
-.bg-hero{
 
-    background: linear-gradient(rgba(128, 128, 128, 0.103), rgba(255, 255, 255, 0.404)), url("/background/istock-1013268708-e1682870425842-1280x853.jpg");
-
-}
 </style>
