@@ -13,7 +13,7 @@
     <div class="flex-1 ">
 
     <h4 class="text-lg text-gray-600 font-semibold mb-8">Please complete our contact form and we will endeavour to reply to you within 1 working day</h4>
-      <form class="w-full ">
+      <form class="w-full" action="https://formspree.io/f/xayvlole" method="post">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">

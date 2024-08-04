@@ -12,7 +12,7 @@
         <section class="py-10 px-5">
 
             <div class="max-w-2xl m-auto text-center">
-                <h2 class="text-3xl text-gray-600 my-4 font-semibold">  Wilmore Care</h2>
+                <h2 class="text-3xl text-theme my-4 font-semibold">  Wilmore Care</h2>
 
                 <p class="leading-7 text-gray-500 font-semibold text-lg">
                    is committed to providing exceptional supported living, residential, respite, and home care services.
@@ -20,17 +20,17 @@
             </div>
         </section>
         <section>
-            <div class="flex gap-4 flex-col md:flex-row justify-between max-w-[1600px] m-auto px-10 py-20 lg:px-10  ">
+            <div class="flex gap-4 flex-col md:flex-row justify-between max-w-[1600px] m-auto px-10 py-20 lg:px-10">
                 <div class="flex-[28%] text-lg text-gray-500 mx-auto max-w-6xl">
                     <p class="my-0">
-                        <strong class="text-gray-600">
+                        <strong class="text-theme">
                             Wilmore Care
                         </strong>
                          is committed to providing exceptional supported living, residential, respite, and home care services. 
 
                          </p>
                         <p class="my-3 font-normal">
-                            <strong class="text-gray-600">
+                            <strong class="text-theme">
                                 Mission
                             </strong>
                             Our mission is to empower individuals with autism spectrum disorder, learning disabilities, physical disabilities, dementia, age-related needs, acquired brain injuries, and mental health conditions to lead fulfilling, independent lives within their communities.
@@ -40,27 +40,27 @@
                   
                         We take pride in offering innovative, effective, safe, compassionate and empowering care and support in high quality environments.</p>
                 </div>
-                <div class="flex-[28%] p-3 card bg-gray-100 border shadow rounded-2xl overflow-hidden">
+                <div class="flex-[28%] p-3 card bg-gray-50/50 border shadow rounded-2xl overflow-hidden">
                     <div class="h-96 w-full pb-10 rounded-t-2xl overflow-hidden">
                         <img src="/assets/images/testimonials/testimonials_banner_1000px-620x395.jpg" alt="" class="w-full h-full object-cover">
 
                     </div>
-                    <div class="py-20   text-center px-10 rounded-b-2xl  text-gray-800 ">
-                        <h3 class="text-3xl text-gray-900">Our Services                        </h3>
-                        <p class="text- font-medium leading-7">Find out more about all our services, the people we support, and how to make a referral.
+                    <div class="py-14 border  text-center px-2 lg:px-10  rounded-b-2xl  text-gray-800 ">
+                        <h3 class="font-semibold text-3xl text-theme">Our Services                        </h3>
+                        <p class="text-gray-500  leading-7 font-semibold">Find out more about all our services, the people we support, and how to make a referral.
 
                         </p>
-                        <nuxt-link to="#" class="bg-theme text-white py-3 px-6 mx-auto my-4 w-max block rounded-3xl font-medium">Locations & Serrvices</nuxt-link>
+                        <nuxt-link to="#" class="bg-theme text-white py-3 px-6 sm:px-3 lg:px-6 mx-auto my-4 w-max block rounded-3xl font-medium">Locations & Serrvices</nuxt-link>
                     </div>
                 </div>
-                <div class="flex-[28%] p-3 bg-gray-100 border rounded-2xl overflow-hidden">
+                <div class="flex-[28%] p-3 bg-gray-50/50  border rounded-2xl overflow-hidden">
                     <div class="h-96 w-full pb-10 rounded-t-2xl overflow-hidden">
                         <img src="/assets/images/testimonials/cdf_090519_ge_lshc_st_peters_082-2-retouched-620x395.jpg" alt="" class="w-full h-full object-cover">
 
                     </div>
-                    <div class="py-20 text-center px-10 rounded-b-2xl text-gray-800">
-                        <h3 class="text-3xl text-gray-900">Work for Us                      </h3>
-                        <p class=" leading-7">
+                    <div class="py-14 px-2 lg:px-10 text-center rounded-b-2xl text-gray-800">
+                        <h3 class="text-3xl text-theme font-semibold">Work for Us                      </h3>
+                        <p class=" leading-7 text-gray-500 font-semibold" >
                             Make a positive difference in people's lives, and, build a meaningful career.
 
 
@@ -71,19 +71,19 @@
                 
 
             </div>
-            <div class=" max-w-[1600px] m-auto px-10 py-20 lg:px-10 ">
+            <!-- <div class=" max-w-[1600px] m-auto px-10 py-20 lg:px-10 ">
                 <h3 class="text-blue-900 text-3xl font-semibold">To download a copy of our brochure
                 </h3>
                 <a href="" class="text-3xl text-blue-950 font-semibold"> click here.</a>
-            </div>
+            </div> -->
         </section>
 
-        <section class="px-5 py-20 my-20 bg-box">
+        <section class="px-5 py-20 my-20 bg-box shadow bg-write">
             <div class="max-w-7xl m-auto">
-                <h2 class="text-6xl font-semibold text-gray-700">Our Objectives</h2>
-                <p class="pl-10 my-6 text-gray-500 font-medium">We strive to improve the quality of life for individuals with learning disabilities.
+                <h2 class="text-6xl font-semibold text-gray-500">Our Objectives</h2>
+                <p class="pl-10 my-6 text-theme font-semibold">We strive to improve the quality of life for individuals with learning disabilities.
                     </p>
-                    <p class="pl-20 md:pl-32  text-gray-500 font-medium"> We aim to foster stronger friendships, relationships, and community connections for our service users.
+                    <p class="pl-20 md:pl-32  text-theme font-semibold"> We aim to foster stronger friendships, relationships, and community connections for our service users.
                     </p>
             </div>
         </section>
@@ -106,7 +106,7 @@
 We take                 pride in offering safe, compassionate and empowering care and support in high quality environments.
 
                     </p>
-                    <nuxt-link to="/contact" class="bg-white text-theme f font-semibold rounded-3xl py-3 px-7 block w-max">
+                    <nuxt-link to="/contact-us" class="bg-white text-theme f font-semibold rounded-3xl py-3 px-7 block w-max">
                         Contact us to discuss a referral now
 
                     </nuxt-link>
@@ -177,5 +177,11 @@ export default {
     background-position: center;
 
 }
+.bg-write{
+  
+    background: linear-gradient(rgba(128, 128, 128, 0.103), rgba(255, 255, 255, 0.404));
+  
+}
+
 
 </style>

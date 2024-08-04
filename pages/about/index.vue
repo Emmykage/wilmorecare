@@ -184,7 +184,7 @@ Our team consists of highly trained and experienced healthcare professionals ded
   We take pride in offering safe, compassionate and empowering care and support in high quality environments.
   
               </p>
-              <nuxt-link to="/contact" class="bg-white text-theme font-medium rounded-xl py-3 px-5 block w-max">
+              <nuxt-link to="/contact-us" class="bg-white text-theme font-medium rounded-xl py-3 px-5 block w-max">
                   Contact us to discuss a referral now
   
               </nuxt-link>

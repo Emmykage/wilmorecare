@@ -79,7 +79,7 @@
                 <div>
 
 
-            <h3 class="text-center mt-0 text-2xl">Why Choose Our Home Care?</h3>
+            <h3 class="text-center mt-0 text-2xl">What We Offer:</h3>
             <ul class="p-4">
                 <li class="text-justify leading-8"><strong>	Short-Term and Emergency Respite:  </strong> Flexible care solutions to meet urgent or planned short-term needs.
 
@@ -97,6 +97,26 @@
 
                     Covering all aspects of daily living and personal care needs.
 
+                </li>
+            </ul>
+
+            <h3 class="text-2xl p-4 ">Benefits</h3>
+
+            <ul class="p-4">
+                <li class="text-justify leading-8"><strong>	Peace of Mind:   </strong> 
+                    Caregivers can rest assured knowing their loved ones are in safe hands.
+
+                </li>
+                <li class="text-justify leading-8">
+                    <strong>Flexible Scheduling  </strong>
+                    Respite care is available for short durations or extended periods, depending on needs
+                </li>
+                <li class="text-justify leading-8">
+                    <strong>
+                    	Supportive Environment:  
+                    </strong>
+
+                    Individuals in respite care receive the same quality and attention as in our regular care services.
                 </li>
             </ul>
         </div>
