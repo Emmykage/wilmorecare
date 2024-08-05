@@ -11,10 +11,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        theme: "#104d77"
+        theme: "#057a2e"
       },
       backgroundColor: {
-        theme: "#104d77"
+        theme: "#057a2e"
       },
       gridTemplateColumns: {
         "layout-styles":  "3fr 1fr"

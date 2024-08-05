@@ -8,7 +8,7 @@
 
             </div>
           
-        </div>
+        </div>       
         <section class="py-10 px-5">
 
             <div class="max-w-2xl m-auto text-center">
@@ -40,20 +40,20 @@
                   
                         We take pride in offering innovative, effective, safe, compassionate and empowering care and support in high quality environments.</p>
                 </div>
-                <div class="flex-[28%] p-3 card bg-gray-50/50 border shadow rounded-2xl overflow-hidden">
+                <div class="flex-[28%] p-3 bg-gray-100  hover:bg-theme/20 transition-all ease-in-out duration-300  border rounded-2xl overflow-hidden">
                     <div class="h-96 w-full pb-10 rounded-t-2xl overflow-hidden">
                         <img src="/assets/images/testimonials/testimonials_banner_1000px-620x395.jpg" alt="" class="w-full h-full object-cover">
 
                     </div>
-                    <div class="py-14 border  text-center px-2 lg:px-10  rounded-b-2xl  text-gray-800 ">
+                    <div class="py-14  text-center px-2 lg:px-10  rounded-b-2xl  text-gray-800 ">
                         <h3 class="font-semibold text-3xl text-theme">Our Services                        </h3>
                         <p class="text-gray-500  leading-7 font-semibold">Find out more about all our services, the people we support, and how to make a referral.
 
                         </p>
-                        <nuxt-link to="#" class="bg-theme text-white py-3 px-6 sm:px-3 lg:px-6 mx-auto my-4 w-max block rounded-3xl font-medium">Locations & Serrvices</nuxt-link>
+                        <nuxt-link to="#" class="bg-theme hover:bg-theme/90 hover:text-gray-100 text-white py-3 px-4 mx-auto my-4 w-max block rounded-3xl font-medium">Locations & Serrvices</nuxt-link>
                     </div>
                 </div>
-                <div class="flex-[28%] p-3 bg-gray-50/50  border rounded-2xl overflow-hidden">
+                <div class="flex-[28%] p-3 bg-gray-100  hover:bg-theme/20 transition-all ease-in-out duration-300  border rounded-2xl overflow-hidden">
                     <div class="h-96 w-full pb-10 rounded-t-2xl overflow-hidden">
                         <img src="/assets/images/testimonials/cdf_090519_ge_lshc_st_peters_082-2-retouched-620x395.jpg" alt="" class="w-full h-full object-cover">
 
@@ -65,7 +65,7 @@
 
 
                         </p>
-                        <nuxt-link to="#" class="bg-theme text-white py-3 px-4 mx-auto my-4 w-max block rounded-3xl font-medium">Locations & Serrvices</nuxt-link>
+                        <nuxt-link to="/careers" class="bg-theme hover:bg-theme/90 hover:text-gray-100 text-white py-3 px-4 mx-auto my-4 w-max block rounded-3xl font-medium">Locations & Serrvices</nuxt-link>
                     </div>
                 </div>
                 
@@ -80,17 +80,17 @@
 
         <section class="px-5 py-20 my-20 bg-box shadow bg-write">
             <div class="max-w-7xl m-auto">
-                <h2 class="text-6xl font-semibold text-gray-500">Our Objectives</h2>
-                <p class="pl-10 my-6 text-theme font-semibold">We strive to improve the quality of life for individuals with learning disabilities.
+                <h2 class="text-6xl font-semibold text-gray-700">Our Objectives</h2>
+                <p class="pl-10 my-6 text-theme/80 font-semibold">We strive to improve the quality of life for individuals with learning disabilities.
                     </p>
-                    <p class="pl-20 md:pl-32  text-theme font-semibold"> We aim to foster stronger friendships, relationships, and community connections for our service users.
+                    <p class="pl-20 md:pl-32  text-theme/80 font-semibold"> We aim to foster stronger friendships, relationships, and community connections for our service users.
                     </p>
             </div>
         </section>
 
 
         <section class="px-5">
-            <div class="flex max-w-[1600px] flex-col sm:flex-row m-auto justify-between gap-">
+            <div class="flex max-w-[1600px] flex-col md:flex-row m-auto justify-between gap-">
                 <div class="py-16 h-[560px] flex-1 ">
                     <div class="bg-ref h-96 md:h-full ">
                         
@@ -106,7 +106,7 @@
 We take                 pride in offering safe, compassionate and empowering care and support in high quality environments.
 
                     </p>
-                    <nuxt-link to="/contact-us" class="bg-white text-theme f font-semibold rounded-3xl py-3 px-7 block w-max">
+                    <nuxt-link to="/contact-us" class="bg-white text-theme text-sm lg:text-base font-semibold rounded-3xl py-3 px-7 block w-max">
                         Contact us to discuss a referral now
 
                     </nuxt-link>
@@ -154,8 +154,11 @@ We take                 pride in offering safe, compassionate and empowering car
 <script>
 import CTA from '~/components/call_to_action/CTA.vue'
 import SocialMediaInstruction from '~/components/socials/social-media-instruction.vue'
+
 export default {
-  components: { CTA, SocialMediaInstruction },
+    name: "Home App",
+  components: { CTA, SocialMediaInstruction   },
+
 
 }
 </script>

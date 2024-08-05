@@ -3,13 +3,13 @@
      
       <main class="relative"> 
         <header class="fixed w-full z-50">
-          <div class="py-7 px-10 bg-theme flex justify-between w-full items-center">
+          <div class="py-7 px-10 bg-gray-100 flex justify-between w-full items-center">
               <!-- Header content -->
                  <nuxt-link to="/" class="text-3xl font-semibold text-white h-20 ">
                   <img src="/assets/images/logos/Full Logo Coloured PNG_rework.png" alt="wilmorecare logo" class="w-full h-full"/>
                 </nuxt-link>
 
-  <ul :class="isShowMenu ? mobileViewOn : mobileViewOff " class="bg-theme/80  flex-1 px-2 left-0 max-w-sm w-full lg:min-w-max fixed top-0  h-full lg:static lg:w-full lg:flex flex-wrap text-white text-sm gap-8 items-center  lg:py-0 lg:px-5 navigation">
+  <ul :class="isShowMenu ? mobileViewOn : mobileViewOff " class=" text-gray-800  flex-1 px-2 left-0 max-w-sm w-full lg:min-w-max fixed top-0  h-full lg:static lg:w-full lg:flex flex-wrap font-semibold text-sm gap-8 items-center  lg:py-0 lg:px-5 navigation">
 
     <li class="list whitespace-nowrap mb-3 py-0 lg:mb-0 relative"><nuxt-link @click="toggleMenu" to="/services" class="whitespace-nowrap mb-3 flex items-center justify-between gap-3 py-2 px-2">Our Services 
       <svg class="transition-all duration-300 ease-in-out" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></nuxt-link >
@@ -26,7 +26,7 @@
       <nuxt-link @click="toggleMenu" to="/about" class="whitespace-nowrap mb-3 flex items-center justify-between gap-3 py-2 px-2">About Us
       <svg class="transition-all duration-300 ease-in-out" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
     </nuxt-link>
-      <ul class="static lg:absolute py-10 px-4 bg-theme/80 lg:bg-theme border border-gray-50/30 rounded sub-list">
+      <ul class="static lg:absolute py-10 px-4 bg-theme/80 lg:bg-theme border border-gray-500/30 border-t-0  rounded sub-list">
         <li><nuxt-link @click="toggleMenu" to="/privacy-policy" class="whitespace-nowrap mb-3  block py-2 px-2">Private Policy</nuxt-link></li>
         <li><nuxt-link @click="toggleMenu" to="/cookies-policy" class="whitespace-nowrap mb-3  block py-2 px-2">Cookies Policy</nuxt-link></li>
 
@@ -93,7 +93,7 @@
         <slot />
         <footer class="py-40">
           <div class="text-center">
-              <p class="text-sm text-gray-400">© 2024 Iris Care Group - Unit 1, Castleton Court, St Mellons Business Park CF3 0LT. Telephone: 03300 567888
+              <p class="text-sm text-gray-400">© 2024 WilmoreCare Group - Unit 1, Castleton Court, St Mellons Business Park CF3 0LT. Telephone: 03300 567888
               </p>
 
               <ul class="text-sm my-4 text-red-500 m-auto flex flex-col md:flex-row max-w-4xl flex-wrap gap-3 md:gap-0">
@@ -179,8 +179,12 @@
   }
 .list:hover .sub-list{
   display: block;
+  background: rgb(240, 240, 240);
 }
 
+.list:hover .sub-list a{
+color: green;
+}
   
 li a:hover{
   color: green;

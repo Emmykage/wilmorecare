@@ -1,6 +1,6 @@
 <!-- pages/about.vue -->
 <template>
-    <main class="pt-64 md:pt-52 wrapper">
+    <main class="pt-64 md:pt-56 wrapper">
       <div class="bg-gray-100 h-96 relative bg-hero">
         <!-- <h3>Text</h3>
         main -->
