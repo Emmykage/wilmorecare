@@ -31,7 +31,7 @@
     <section class="py-20 px-5 bg-gray-100 shadow border">
         <div class="grid grid-cols sm:grid-cols-3 lg:grid-cols-4 m-auto gap-6 px-0 max-w-7xl">
             <!-- <div> -->
-            <div class="bg-white p-2 flex flex-col text-white rounded-3xl overflow-hidden">
+            <div class="bg-themeVariant/10 p-2 flex flex-col text-white rounded-3xl overflow-hidden">
                 <img src="/assets/images/supported-living-friends-having-fun-together_23-2149315655.avif" alt=""  class="h-40 border w-full object-fill rounded-t-3xl">
                 <div class="px-4 flex-1 py-4 bg-gray-100 text-gray-800">
                     <h3 class="text-lg md:text-xl whitespace-normal font-semibold">Supported Living</h3>
@@ -39,26 +39,27 @@
                         Tailored, person-centred care to support individuals to live as independently as possible. We provide 24-hour assistance, shared accommodation, and private spaces.
                     </p>
                 </div>
-                <nuxt-link href="/supported-living" class="flex mt-auto items-center gap-5 hover:gap-2 transition-all ease-out duration-300 relative text-lg bg-theme hover:bg-theme/80 p-4 rounded-b-2xl">
+                <nuxt-link href="/supported-living" class="flex mt-auto items-center gap-5 hover:gap-2 transition-all ease-out duration-300 relative text-lg bg-themeVariant hover:bg-themeVariant/80 p-4 rounded-b-2xl">
                     Discover More 
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path></svg>
                 </nuxt-link>
 
             </div>
 
-            <div class="bg-white h-full p-2 flex flex-col text-white rounded-3xl overflow-hidden">
+            <div class="bg-themeVariant/10 h-full p-2 flex flex-col text-white rounded-3xl overflow-hidden">
                 <img src="/assets/images/10-advantages-of-hc.jpg" alt=""  class="h-40 border w-full object-cover rounded-t-3xl">
-                <div class="px-4 py-4 flex-grow bg-gray-100 text-gray-800">
+                <div class="px-4 py-4 flex-grow bg-gray-100/80 text-gray-800">
                     <h3 class="text-lg md:text-xl whitespace-normal font-semibold">Home Care</h3>
                     <p class="my-4 text-base font-medium leading-7">
                         Comprehensive in-home care for adults with various needs, including age-related issues, learning disabilities, physical disabilities, mental health conditions, and complex behaviours. Our goal is to maintain independence, respect, and quality of life                    </p>
                 </div>
-                <a href="/home-care" class="flex  mt-auto items-center gap-5 hover:gap-2 transition-all ease-out duration-300 relative text-lg bg-theme hover:bg-theme/80 p-4 rounded-b-2xl ">
+                <nuxt-link href="/home-care" class="flex  mt-auto items-center gap-5 hover:gap-2 transition-all ease-out duration-300 relative text-lg bg-themeVariant hover:bg-themeVariant/80 p-4 rounded-b-2xl ">
                     Discover More 
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path></svg></a>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path></svg>
+                </nuxt-link>
 
             </div>
-            <div class="bg-white p-2 flex flex-col text-white rounded-3xl overflow-hidden">
+            <div class="bg-themeVariant p-2 flex flex-col text-white rounded-3xl overflow-hidden">
                 <img src="/assets/images/respite-How-Many-TImes-Can-I-Use-Respite-Care_-1024x683.jpeg" alt=""  class="h-40 border w-full object-cover rounded-t-3xl">
                 <div class="px-4 flex-1 py-4 bg-gray-100 text-gray-800">
                     <h3 class="text-lg md:text-xl whitespace-normal font-semibold">Respite Care</h3>
@@ -66,13 +67,13 @@
                         Short-term, temporary care solutions designed to give primary caregivers a break while ensuring continuity of care for the individual.
                     </p>
                 </div>
-                <nuxt-link href="/respited-care" class="flex mt-auto items-center gap-5 hover:gap-2 transition-all ease-out duration-300 relative text-lg bg-theme hover:bg-theme/80 p-4 rounded-b-2xl ">
+                <nuxt-link href="/respited-care" class="flex mt-auto items-center gap-5 hover:gap-2 transition-all ease-out duration-300 relative text-lg bg-themeVariant hover:bg-themeVariant/80 p-4 rounded-b-2xl ">
                     Discover More 
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path></svg>
                 </nuxt-link>
 
             </div>
-            <div class="bg-white p-2 flex flex-col text-white rounded-3xl overflow-hidden">
+            <div class="bg-themeVariant/10 p-2 flex flex-col text-white rounded-3xl overflow-hidden">
                 <img src="/assets/images/Residential-care-home-provides-personal-care.jpg" alt=""  class="h-40 border w-full object-cover rounded-t-3xl">
                 <div class="px-4 flex-1 py-4 bg-gray-100 text-gray-800">
                     <h3 class="text-lg md:text-xl whitespace-normal font-semibold">Residential Care</h3>
