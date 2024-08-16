@@ -162,6 +162,7 @@ export default {
 <style scoped>
 .wrapper {
   background-image: url("/public/background/back-column-3-1-2.png");
+  background-repeat: no-repeat;
 }
 .bg-hero {
   background: linear-gradient(290deg, #57c0af70, #445ba7ab), url('/public/background/iStock-1200583427-e1715614469710.jpg');

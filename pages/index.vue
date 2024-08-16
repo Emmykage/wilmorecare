@@ -171,7 +171,8 @@ export default {
 
 .bg-hero{
     background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/iStock-1200583427-e1715614469710.jpg');;
-  
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
 .card img{

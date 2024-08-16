@@ -8,7 +8,7 @@
       </div>
   </div>
 
-  <section class="bg-[#0066b3] px-5">
+  <section class="bg-themeVariant px-5">
     <div class="grid md:grid-cols-2 m-auto py-10 max-w-7xl border-b border-gray-500">
       <div class="max-w-[500px]">
         <img src="/assets/images/about-us/Care-home-image-line-yellow-15.webp" alt="step 1">
@@ -111,20 +111,20 @@
     <section class="px-5 py-10">
         <div class="max-w-6xl m-auto bg-gray-100/40 p-8 border rounded-xl">
           <h4 class="text-lg text-gray-600 font-semibold mb-8">Please complete this form if you would like someone to contact you to discuss a referral.</h4>
-            <form class="w-full ">
+            <form class="w-full" @submit.prevent="handleSubmit">
                 <div class="flex flex-wrap -mx-3 mb-6">
                   <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                       Name <span class="text-red-500">*</span>
                     </label>
-                    <input class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Full Name">
+                    <input v-model="form.name" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Full Name">
 
                   </div>
                   <div class="w-full md:w-1/2 px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                       Job Title <span class="text-red-500">*</span>
                     </label>
-                    <input class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="job-title" type="text" placeholder="Enter Job Title">
+                    <input v-model="form.jobTitle" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="job-title" type="text" placeholder="Enter Job Title">
                   </div>
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6">
@@ -132,13 +132,13 @@
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                       ORGANIZATION <span class="text-red-500">*</span> 
                     </label>
-                    <input class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Organization Name">
+                    <input v-model="form.organization" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Organization Name">
                   </div>
                   <div class="w-full md:w-1/2 px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                       EMAIL*
                     </label>
-                    <input class="appearance-none block w-full bg-gray-50 text-gray-700 rounded-full border border-cyan-600 py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="text" placeholder="Enter Email">
+                    <input v-model="form.email" class="appearance-none block w-full bg-gray-50 text-gray-700 rounded-full border border-cyan-600 py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="text" placeholder="Enter Email">
                   </div>
                 </div>
 
@@ -147,14 +147,14 @@
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                       CONTACT TELEPHONE NUMBER 1 <span class="text-red-500">*</span>
                     </label>
-                    <input class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Contact Number">
+                    <input v-model="form.phone" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Contact Number">
 
                   </div>
                   <div class="w-full md:w-1/2 px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-2">
                       CONTACT TELEPHONE NUMBER 2 <span class="text-red-500">*</span>
                     </label>
-                    <input class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-600 rounded-full py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="contact-2" type="text" placeholder="Enter Contact 2">
+                    <input v-model="form.phone2" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-600 rounded-full py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="contact-2" type="text" placeholder="Enter Contact 2">
                   </div>
                 </div>
 
@@ -170,13 +170,60 @@
 
 <script>
 export default {
-  name: 'ComponentName',
+  name: 'referals',
   data() {
     return {
+      form: {
+        name: "",
+        jobTitle: "",
+        email: "",
+        organization: '',
+        email: '',
+        phone1: "",
+        phone2: ""
+
+      },
+      submissionStatus: ""
 
     }
   },
   methods: {
+    async handleSubmit(){
+      try {
+
+       const response =  await fetch("http://formspree.io/f/mwpeozry", {
+          method: "POST",
+          headers: {
+            "Accept": "application/json",
+            "Content-type": "application/json"
+          },
+          body: JSON.stringify(this.form)
+        });
+        if(response.ok){
+          this.submissionStatus = "success",
+          this.resetForm()
+        }
+        else{
+          this.submissionStatus = "error"
+        }
+        
+      } catch (error) {
+        console.error('Form submission error:', error);
+        this.submissionStatus = 'error';
+      }
+    },
+
+    resetForm() {
+      this.form = {
+        name: '',
+        jobTitle: '',
+        organization: '',
+        email: '',
+        contact1: '',
+        contact2: '',
+        enquiryType: ''
+      };
+    }
 
     
   }

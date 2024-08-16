@@ -1,6 +1,6 @@
 <template>
-  <main class="pt-64 md:pt-[300px] ">
-    <section class="px-5 text-justify font-medium text-gray-600 leading-7" >
+  <main class="pt-80 md:pt-[300px] ">
+    <section class="px-5 p-8 text-justify font-medium text-gray-600 leading-7" >
         <div class="100 max-w-4xl m-auto" >
 
             <h2 class="text-3xl font-bold text-gray-600 text-center">  Cookie  Policy </h2>

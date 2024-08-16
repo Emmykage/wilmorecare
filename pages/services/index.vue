@@ -1,5 +1,5 @@
 <template>
-  <main class="pt-60 sm:pt-52 md:pt-56">
+  <main class="pt-80 sm:pt-52 md:pt-56">
     <div class="bg-gray-100 h-[500px] bg-hero relative">
         <div class="max-w-lg w-full text-center py-10 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
             <h3 class="text-3xl mb-3 font-semibold"> Services</h3>
@@ -29,10 +29,10 @@
     
 
     <section class="py-20 px-5 bg-gray-100 shadow border">
-        <div class="grid grid-cols sm:grid-cols-3 lg:grid-cols-4 m-auto gap-6 px-0 max-w-7xl">
+        <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-4 m-auto gap-6 px-0 max-w-7xl">
             <!-- <div> -->
             <div class="bg-themeVariant/10 p-2 flex flex-col text-white rounded-3xl overflow-hidden">
-                <img src="/assets/images/supported-living-friends-having-fun-together_23-2149315655.avif" alt=""  class="h-40 border w-full object-fill rounded-t-3xl">
+                <img src="/assets/images/supported-living-friends-having-fun-together_23-2149315655.avif" alt=""  class="h-40 border w-full object-cover object-top rounded-t-3xl">
                 <div class="px-4 flex-1 py-4 bg-gray-100 text-gray-800">
                     <h3 class="text-lg md:text-xl whitespace-normal font-semibold">Supported Living</h3>
                     <p class="my-4 text-base font-medium leading-7">
@@ -47,7 +47,7 @@
             </div>
 
             <div class="bg-themeVariant/10 h-full p-2 flex flex-col text-white rounded-3xl overflow-hidden">
-                <img src="/assets/images/10-advantages-of-hc.jpg" alt=""  class="h-40 border w-full object-cover rounded-t-3xl">
+                <img src="/assets/images/10-advantages-of-hc.jpg" alt=""  class="h-40 border w-full object-cover object-top rounded-t-3xl">
                 <div class="px-4 py-4 flex-grow bg-gray-100/80 text-gray-800">
                     <h3 class="text-lg md:text-xl whitespace-normal font-semibold">Home Care</h3>
                     <p class="my-4 text-base font-medium leading-7">
