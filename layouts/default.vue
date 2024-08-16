@@ -9,15 +9,20 @@
                   <img src="/assets/images/logos/Full Logo Coloured PNG_rework.png" alt="wilmorecare logo" class="w-full h-full"/>
                 </nuxt-link>
 
-  <ul :class="isShowMenu ? mobileViewOn : mobileViewOff " class=" text-gray-800  flex-1 px-2 left-0 max-w-sm w-full lg:min-w-max fixed top-0  h-full lg:static lg:w-full lg:flex flex-wrap font-semibold text-sm gap-8 items-center  lg:py-0 lg:px-5 navigation">
+  <ul :class="isShowMenu ? mobileViewOn : mobileViewOff " class=" text-gray-800 bg-themeVariant/90 lg:bg-transparent flex-1 px-2 left-0 max-w-sm w-full lg:min-w-max fixed top-0  h-full lg:static lg:w-full lg:flex flex-wrap font-semibold text-sm gap-8 items-center  lg:py-0 lg:px-5 navigation">
+    <span @click="toggleMenu" class="block md:hidden ml-auto w-max cursor-pointer">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2.5rem" width="2.5rem" xmlns="http://www.w3.org/2000/svg"><path d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z"></path></svg>    
+          </span>
 
-    <li class="list whitespace-nowrap mb-3 py-0 lg:mb-0 relative"><nuxt-link @click="toggleMenu" to="/services" class="whitespace-nowrap mb-3 flex items-center justify-between gap-3 py-2 px-2">Our Services 
+      <li class="list whitespace-nowrap mb-3 py-0 lg:mb-0 relative"><nuxt-link @click="toggleMenu" to="/services" class="whitespace-nowrap mb-3 flex items-center justify-between gap-3 py-2 px-2">
+        Our Services 
+
       <svg class="transition-all duration-300 ease-in-out" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></nuxt-link >
-        <ul class="static lg:absolute py-10 px-4 bg-theme/80 lg:bg-theme border border-gray-50/30 rounded sub-list">
-          <li><nuxt-link @click="toggleMenu" to="/supported-living" class="whitespace-nowrap mb-3  block py-2 px-2">Supported Living</nuxt-link></li>
-          <li class=""><nuxt-link @click="toggleMenu" to="/home-care" class="whitespace-nowrap mb-3  block py-2 px-2">Home Care</nuxt-link></li>
-          <li><nuxt-link @click="toggleMenu" to="/respite-care" class="whitespace-nowrap mb-3  block py-2 px-2">Respite Care</nuxt-link></li>
-          <li><nuxt-link @click="toggleMenu" to="/residential-care" class="whitespace-nowrap mb-3  block py-2 px-2">Residential Care</nuxt-link></li>
+        <ul class="static lg:absolute py-10 px-4 lg:px-0 bg-themeVariant border border-gray-50/30 rounded sub-list">
+          <li class="hover:bg-theme/50 px-5 "><nuxt-link @click="toggleMenu" to="/supported-living" class="whitespace-nowrap mb-3  block py-2 px-2 hover:text-green-950">Supported Living</nuxt-link></li>
+          <li class="hover:bg-theme/50 px-5 "><nuxt-link @click="toggleMenu" to="/home-care" class="whitespace-nowrap mb-3  block py-2 px-2">Home Care</nuxt-link></li>
+          <li class="hover:bg-theme/50 px-5 "><nuxt-link @click="toggleMenu" to="/respite-care" class="whitespace-nowrap mb-3  block py-2 px-2">Respite Care</nuxt-link></li>
+          <li class="hover:bg-theme/50 px-5 "><nuxt-link @click="toggleMenu" to="/residential-care" class="whitespace-nowrap mb-3  block py-2 px-2">Residential Care</nuxt-link></li>
         </ul>
     </li>
     <!-- <li class="whitespace-nowrap mb-3 lg:mb-0 py-3"><nuxt-link @click="toggleMenu" to="/professional" class="whitespace-nowrap mb-3  block py-2 px-2">Professionals</nuxt-link></li> -->
@@ -26,9 +31,9 @@
       <nuxt-link @click="toggleMenu" to="/about" class="whitespace-nowrap mb-3 flex items-center justify-between gap-3 py-2 px-2">About Us
       <svg class="transition-all duration-300 ease-in-out" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
     </nuxt-link>
-      <ul class="static lg:absolute py-10 px-4 bg-theme/80 lg:bg-theme border border-gray-500/30 border-t-0  rounded sub-list">
-        <li><nuxt-link @click="toggleMenu" to="/privacy-policy" class="whitespace-nowrap mb-3  block py-2 px-2">Private Policy</nuxt-link></li>
-        <li><nuxt-link @click="toggleMenu" to="/cookies-policy" class="whitespace-nowrap mb-3  block py-2 px-2">Cookies Policy</nuxt-link></li>
+      <ul class="static lg:absolute py-10 px-4 bg-themeVariant border border-gray-500/30 border-t-0  rounded sub-list">
+        <li class="hover:bg-theme/50 px-5 "><nuxt-link @click="toggleMenu" to="/privacy-policy" class="whitespace-nowrap mb-3  block py-2 px-2">Private Policy</nuxt-link></li>
+        <li class="hover:bg-theme/50 px-5 "><nuxt-link @click="toggleMenu" to="/cookies-policy" class="whitespace-nowrap mb-3  block py-2 px-2">Cookies Policy</nuxt-link></li>
 
         
       </ul>
@@ -37,19 +42,19 @@
 
     <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/careers" class="whitespace-nowrap mb-3 block py-2 px-2">Work for us</nuxt-link></li>
     <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/contact-us" class="whitespace-nowrap mb-3 block py-2 px-2">Contact us</nuxt-link></li>
-    <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/get-referals" class="whitespace-nowrap mb-3 block py-2 px-5 bg-[#63b6b3] rounded-3xl text-white">Get Referals</nuxt-link></li>
+    <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/get-referals" class="whitespace-nowrap mb-3 block py-2 px-5 bg-[#63b6b3] hover:bg-green-500 rounded-3xl text-white transition-all ease-linear duration-300 hover:text-gray-200">Get Referals</nuxt-link></li>
 
 
     
 
 
   </ul>
-  <nuxt-link class="text-gray-100 cursor-pointer  block lg:hidden" @click="toggleMenu">
+  <nuxt-link class="text-gray-700 cursor-pointer  block lg:hidden" @click="toggleMenu">
     <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.2" baseProfile="tiny" viewBox="0 0 24 24" height="1.5rem" width="1.5rem" xmlns="http://www.w3.org/2000/svg"><path d="M19 18c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1s.45-1 1-1h14m0-2h-14c-1.654 0-3 1.346-3 3s1.346 3 3 3h14c1.654 0 3-1.346 3-3s-1.346-3-3-3zM19 11c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1s.45-1 1-1h14m0-2h-14c-1.654 0-3 1.346-3 3s1.346 3 3 3h14c1.654 0 3-1.346 3-3s-1.346-3-3-3zM19 4c.55 0 1 .45 1 1s-.45 1-1 1h-14c-.55 0-1-.45-1-1s.45-1 1-1h14m0-2h-14c-1.654 0-3 1.346-3 3s1.346 3 3 3h14c1.654 0 3-1.346 3-3s-1.346-3-3-3z"></path></svg>
   </nuxt-link>
           </div>
 
-          <div class="bg-[#63b6b3] text-gray-100 flex md:flex-row flex-col justify-between py-3 md:px-10 px-3">
+          <div class="bg-themeVariant text-gray-100 flex md:flex-row flex-col justify-between py-3 md:px-10 px-3">
             <div class="flex items-center gap-5 mb-3">
               <span class="border border-white p-4 rounded-full">
                 <svg class="h-2.5 w-2.5 lg:w-6 lg:h-6" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"  xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -98,8 +103,8 @@
 
               <ul class="text-sm my-4 text-red-500 m-auto flex flex-col md:flex-row max-w-4xl flex-wrap gap-3 md:gap-0">
 
-                <li class="border-r border-gray-400 px-4">Privacy Policy  </li>
-                <li class="border-r border-gray-400 px-4">Cookie Policy</li>
+                <li class="border-r border-gray-400 px-4"> <nuxt-link to="/privacy-policy" class="hover:text-theme" >Privacy Policy </nuxt-link> </li>
+                <li class="border-r border-gray-400 px-4"> <nuxt-link to="/privacy-cookie" class="hover:text-theme" >Cookie Policy</nuxt-link></li>
                 <li class="border-r border-gray-400 px-4">Modern Slavery Statement</li>
                 <li class="border-r border-gray-400 px-4"> Gender Pay Gap Report</li>
                 <li class=" border-gray-400 px-4"> Sustainability Statement</li>
@@ -117,7 +122,7 @@
     name: "App",
     data(){
       return{
-        mobileViewOn: " pt-20 pb-40 block left-0",
+        mobileViewOn: " pt-14 pb-40 block left-0",
         mobileViewOff: " pt-20 pb-40 px-10 hidden -left-full ",
         isShowMenu: false
         
@@ -179,16 +184,20 @@
   }
 .list:hover .sub-list{
   display: block;
-  background: rgb(240, 240, 240);
+
 }
 
-.list:hover .sub-list a{
-color: green;
-}
-  
-li a:hover{
-  color: green;
 
-}  
+@media (max-width: 1024px) {
+  .list a{
+    color: white;
+  }
+
+    
+    .list:hover .sub-list a{
+      color: white;
+    }
+  }
+
   </style>
   

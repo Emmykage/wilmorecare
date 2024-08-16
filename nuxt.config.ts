@@ -16,8 +16,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  modules: [
-    'vue3-carousel-nuxt'
+  // modules: [
+  //   'vue3-carousel-nuxt'
+  // ],
+  plugins: [
+    '~/plugins/vue3-carousel.js' // Adjust path if needed
+
   ],
   postcss: {
     plugins: {

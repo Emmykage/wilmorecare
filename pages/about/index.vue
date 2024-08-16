@@ -1,7 +1,7 @@
 <!-- pages/about.vue -->
 <template>
     <main class="pt-64 md:pt-56 wrapper">
-      <div class="bg-gray-100 h-96 relative bg-hero">
+      <div class="bg-gray-100 h-[500px] relative bg-hero">
         <!-- <h3>Text</h3>
         main -->
         <div class="max-w-lg w-full text-center py-10 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
@@ -111,7 +111,7 @@
           <div>
             <h2 class="text-3xl text-center font-semibold text-gray-50">Our Core Values</h2>
 
-            <ul class="text-gray-100">
+            <ul class="text-gray-100 px-4">
               <li class="my-10">
                 <strong class="text-gray-50"> Empowerment - </strong>
                We empower our service users to achieve their highest level of independence.
@@ -205,8 +205,7 @@ Our team consists of highly trained and experienced healthcare professionals ded
         </div>
 
         <h4 class="text-center my-4 text-3xl">
-          Our Vision and Values
-
+          Our Unified Vision and Values
         </h4>
         <p class="max-w-xl m-auto px-4 text-base ">We are proud that everyone has worked together to define a vision and values that we are all proud to commit oursleves to.
 
@@ -224,7 +223,7 @@ Our team consists of highly trained and experienced healthcare professionals ded
         </div>
 
         <h4 class="text-center my-4 text-3xl">
-          Our Vision and Values
+          Our Vision for Leading Care Excellence
 
         </h4>
         <p class="max-w-xl m-auto px-4 text-base ">Our vision is for Wilmore Care to be the best place in the UK for individuals to receive care and support.
@@ -291,6 +290,14 @@ Our team consists of highly trained and experienced healthcare professionals ded
     left: 0;
 
   }
+  .bg-ref{
+  
+    background: linear-gradient(rgba(128, 128, 128, 0.103), rgba(255, 255, 255, 0.404)), url("/background/turkish-man.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
   .bg-hero{
     background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/about-us.jpg');
     background-size: cover;

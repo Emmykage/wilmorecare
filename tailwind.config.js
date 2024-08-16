@@ -11,11 +11,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        theme: "#057a2e",
-        themeVariant: "#00a0a6"
+        // theme: "#057a2e",
+        // theme: "#63b6b3",
+        theme: "#0e3d3c",
+        // themeVariant: "#00a0a6",
+        themeVariant: "#027175"
+
       },
       backgroundColor: {
-        theme: "#057a2e",
+        theme: "#63b6b3",
         themeVariant: "#00a0a6"
       },
       gridTemplateColumns: {

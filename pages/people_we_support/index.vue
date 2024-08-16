@@ -1,7 +1,7 @@
 <template>
   <main class=" pt-64 md:pt-56 wrapper">
-    <div class="bg-gray-200 h-96 bg-hero relative">
-      <div class="max-w-lg w-full text-center py-12 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 left-20 bg-orange-600/60 text-white">
+    <div class="bg-gray-200 h-[500px] bg-hero relative">
+      <div class="max-w-lg w-full text-center py-10 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
           <h3 class="text-3xl mb-3 font-semibold">  Who We Support</h3>
 
           
@@ -94,90 +94,137 @@
 
         
         <ul class="max-w-5xl reason-lis list-inside nter">
-          <li class="py-2 leading-7 relative text-gray-100">
+          <li class="py-2 leading-7 relative text-gray-100 flex gap-3">
+
+
             <span class="mr-3 text-green-900"> &#10004; </span>
+
+            <p>
+
             
             <strong class="flex-1">Customized Care: </strong>
              Our holistic and personalized approach ensures that each service user's needs and goals are met.
+            </p>
+
             </li>
-            <li class="py-2 leading-7 text-gray-100">
+            <li class="py-2 leading-7 text-gray-100 flex gap-3">
+
               <span class="mr-3 text-green-900"> &#10004; </span>
+              <p>
 
               <strong>	Trusted Carers:</strong>
                Our experienced and well-trained team members deliver compassionate care.
+              </p>
 
             </li>
-            <li class="py-2 leading-7 text-gray-100">
+            <li class="py-2 leading-7 text-gray-100 flex gap-3">
+
               <span class="mr-3 text-green-900"> &#10004; </span>
+              <p>
 
               <strong>Diverse and Complex Condition Care: </strong>	 Our carers have specialist training to provide safe care for complex needs.
+            </p>
 
             </li>
-            <li class="py-2 leading-7 text-gray-100">
-              <span class="mr-3 text-green-900"> &#10004; </span>
+            <li class="py-2 leading-7 text-gray-100 flex gap-3">
 
+              <span class="mr-3 text-green-900"> &#10004; </span>
+              <p>
               <strong>
+
                 Family Inclusion:
 
               </strong>
                We involve families and relatives in care plans for comprehensive support and providing them with the needed assurance.
 
+              </p>
             </li>
-            <li class="py-2 leading-7 text-gray-100">
+            <li class="py-2 leading-7 text-gray-100 flex gap-3">
+
               <span class="mr-3 text-green-900"> &#10004; </span>
+
+              <p>
+
 
               <strong>
                 Family Inclusion: 
               </strong>
                Our services include family and relatives in care packages to provide them with the needed assurance.
+              </p>
 
             </li>
-            <li class="py-2 leading-7 text-gray-100">
+            <li class="py-2 leading-7 text-gray-100 flex gap-3">
               <span class="mr-3 text-green-900"> &#10004; </span>
 
+              <p>
               <strong>
                 24-Hour Support: 
               </strong>
+
+
                Our services are available around the clock, ensuring continuous care.
+              </p>
 
             </li>
-            <li class="py-2 leading-7 text-gray-100">
+            <li class="py-2 leading-7 text-gray-100 flex gap-3">
               <span class="mr-3 text-green-900"> &#10004; </span>
+              <p>
+
 
               <strong>
                 Highly Recommended: 
               </strong>
            We are commended by service users and their families.
 
+          </p>
+
+
             </li>
-            <li class="py-2 text-gray-100">
+            <li class="py-2 text-gray-100 flex gap-3">
               <span class="mr-3 text-green-900"> &#10004; </span>
+              <p>
+
 
               <strong>
                 Collaboration: 
               </strong>
                Our care and support package work with individuals, communities, relevant societies and multi-agency through information sharing and confidentiality to improve outcomes.
 
+              </p>
 
             </li>
-            <li class="py-2 leading-7 text-gray-100">
+            <li class="py-2 leading-7 text-gray-100 flex gap-3">
               <span class="mr-3 text-green-900"> &#10004; </span>
+
+              <p>
+
+           
 
               <strong>
 
               </strong>
               	Homely environments designed with stimulating environments
-
+              </p>
             </li>
-            <li class="py-2 leading-7 text-gray-100">
-              <span class="mr-3 text-green-900"> &#10004; </span>
+            <li class="py-2 leading-7 text-gray-100 flex gap-3">
+
+              <p>
+                <span class="mr-3 text-green-900"> &#10004; </span>
+
+
 
               	We pay attention to detail
+              </p>
 
             </li>
-            <li class="py-2 leading-7 text-gray-100">
+            <li class="py-2 leading-7 text-gray-100 flex gap-3">
               <span class="mr-3 text-green-900"> &#10004; </span>
+              <p>
+
               Support our residents to be more independent over time.
+
+            </p>
+
 
           </li>
         </ul>

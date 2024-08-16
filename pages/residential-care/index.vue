@@ -1,5 +1,5 @@
 <template>
-  <main class="pt-64 md:pt-40 ">
+  <main class="pt-64 md:pt-56 ">
     <!-- Your content here -->
     <div class="bg-gray-100 h-96 bg-hero relative">
         <div class="max-w-lg w-full text-center py-12 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 left-20 bg-orange-600/60 text-white">

@@ -1,7 +1,7 @@
 <template>
-  <main class="pt-60 sm:pt-52 md:pt-52">
-    <div class="bg-gray-100 h-96 bg-hero relative">
-        <div class="max-w-lg w-full text-center py-14 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
+  <main class="pt-60 sm:pt-52 md:pt-56">
+    <div class="bg-gray-100 h-[500px] bg-hero relative">
+        <div class="max-w-lg w-full text-center py-10 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
             <h3 class="text-3xl mb-3 font-semibold"> Services</h3>
   
             
@@ -59,7 +59,7 @@
                 </nuxt-link>
 
             </div>
-            <div class="bg-themeVariant p-2 flex flex-col text-white rounded-3xl overflow-hidden">
+            <div class="bg-themeVariant/10 p-2 flex flex-col text-white rounded-3xl overflow-hidden">
                 <img src="/assets/images/respite-How-Many-TImes-Can-I-Use-Respite-Care_-1024x683.jpeg" alt=""  class="h-40 border w-full object-cover rounded-t-3xl">
                 <div class="px-4 flex-1 py-4 bg-gray-100 text-gray-800">
                     <h3 class="text-lg md:text-xl whitespace-normal font-semibold">Respite Care</h3>
