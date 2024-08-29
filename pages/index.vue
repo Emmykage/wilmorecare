@@ -1,9 +1,9 @@
 <template>
     <main class="pt-[320px] md:pt-56">
 
-                <div class="bg-green-500 h-[700px] bg-hero relative">
+                <div class="bg-green-500 h-[650px] bg-hero relative">
                     <div class="max-w-lg py-20 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
-                        <h3 class="text-2xl mb-3 font-semibold">            Are you looking to place someone?</h3>
+                        <h3 class="text-2xl mb-3 font-semibold">  Are you looking to place someone?</h3>
                             <p>We are experts in supporting individuals with complex mental health conditions and behaviours that may challenge.</p>
         
                     </div>
