@@ -2,11 +2,75 @@
   <main class="pt-64 md:pt-40">
     <div class="bg-gray-100 h-96 bg-hero relative">
       <div class="max-w-lg w-full text-center py-12 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
-          <h3 class="text-3xl mb-3 font-semibold">  Get Referals </h3>
+          <h3 class="text-3xl mb-3 font-semibold">  Make a Referral </h3>
 
           
       </div>
   </div>
+
+  <section class="px-5 py-10">
+    <div class="max-w-6xl m-auto bg-gray-100/40 p-8 border rounded-xl">
+      <h4 class="text-lg text-gray-600 font-semibold mb-8">Please complete this form if you would like someone to contact you to discuss a referral.</h4>
+        <form class="w-full" @submit.prevent="handleSubmit">
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                  Name <span class="text-red-500">*</span>
+                </label>
+                <input v-model="form.name" required class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Full Name">
+
+              </div>
+              <div class="w-full md:w-1/2 px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                  Job Title <span class="text-red-500">*</span>
+                </label>
+                <input v-model="form.jobTitle" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="job-title" type="text" placeholder="Enter Job Title">
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                  ORGANIZATION <span class="text-red-500">*</span> 
+                </label>
+                <input v-model="form.organization" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Organization Name">
+              </div>
+              <div class="w-full md:w-1/2 px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                  EMAIL*
+                </label>
+                <input v-model="form.email" required class="appearance-none block w-full bg-gray-50 text-gray-700 rounded-full border border-cyan-600 py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="text" placeholder="Enter Email">
+              </div>
+            </div>
+
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                  CONTACT TELEPHONE NUMBER 1 <span class="text-red-500">*</span>
+                </label>
+                <input v-model="form.phone" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Contact Number">
+
+              </div>
+              <div class="w-full md:w-1/2 px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-2">
+                  CONTACT TELEPHONE NUMBER 2 <span class="text-red-500">*</span>
+                </label>
+                <input v-model="form.phone2" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-600 rounded-full py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="contact-2" type="text" placeholder="Enter Contact 2">
+              </div>
+
+              <div class="w-full px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-2">
+                  Message <span class="text-red-500">*</span>
+                </label>
+                <textarea v-model="form.message" class="appearance-none block w-full min-h-32 bg-gray-50 text-gray-700 border border-cyan-600 rounded-3xl py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="contact-2" type="text" placeholder="Enter Contact 2"> </textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="bg-theme text-white px-8 hover:bg-theme/80 py-3 font-semibold rounded-full ">Submit Message</button>
+            
+            
+          </form>
+    </div>
+</section>
 
   <section class="bg-themeVariant px-5">
     <div class="grid md:grid-cols-2 m-auto py-10 max-w-7xl border-b border-gray-500">
@@ -108,62 +172,7 @@
     </div>
     <!-- #0066b3 -->
   </section>
-    <section class="px-5 py-10">
-        <div class="max-w-6xl m-auto bg-gray-100/40 p-8 border rounded-xl">
-          <h4 class="text-lg text-gray-600 font-semibold mb-8">Please complete this form if you would like someone to contact you to discuss a referral.</h4>
-            <form class="w-full" @submit.prevent="handleSubmit">
-                <div class="flex flex-wrap -mx-3 mb-6">
-                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                      Name <span class="text-red-500">*</span>
-                    </label>
-                    <input v-model="form.name" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Full Name">
-
-                  </div>
-                  <div class="w-full md:w-1/2 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-                      Job Title <span class="text-red-500">*</span>
-                    </label>
-                    <input v-model="form.jobTitle" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="job-title" type="text" placeholder="Enter Job Title">
-                  </div>
-                </div>
-                <div class="flex flex-wrap -mx-3 mb-6">
-                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                      ORGANIZATION <span class="text-red-500">*</span> 
-                    </label>
-                    <input v-model="form.organization" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Organization Name">
-                  </div>
-                  <div class="w-full md:w-1/2 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-                      EMAIL*
-                    </label>
-                    <input v-model="form.email" class="appearance-none block w-full bg-gray-50 text-gray-700 rounded-full border border-cyan-600 py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="text" placeholder="Enter Email">
-                  </div>
-                </div>
-
-                <div class="flex flex-wrap -mx-3 mb-6">
-                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                      CONTACT TELEPHONE NUMBER 1 <span class="text-red-500">*</span>
-                    </label>
-                    <input v-model="form.phone" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Contact Number">
-
-                  </div>
-                  <div class="w-full md:w-1/2 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-2">
-                      CONTACT TELEPHONE NUMBER 2 <span class="text-red-500">*</span>
-                    </label>
-                    <input v-model="form.phone2" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-600 rounded-full py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="contact-2" type="text" placeholder="Enter Contact 2">
-                  </div>
-                </div>
-
-                <button type="submit" class="bg-theme text-white px-8 hover:bg-theme/80 py-3 font-semibold rounded-full ">Submit Message</button>
-                
-                
-              </form>
-        </div>
-    </section>
+   
 
 </main>
 </template>

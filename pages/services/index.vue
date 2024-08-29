@@ -59,6 +59,20 @@
                 </nuxt-link>
 
             </div>
+            
+            <div class="bg-themeVariant/10 p-2 flex flex-col text-white rounded-3xl overflow-hidden">
+                <img src="/assets/images/Residential-care-home-provides-personal-care.jpg" alt=""  class="h-40 border w-full object-cover rounded-t-3xl">
+                <div class="px-4 flex-1 py-4 bg-gray-100 text-gray-800">
+                    <h3 class="text-lg md:text-xl whitespace-normal font-semibold">Residential Care</h3>
+                    <p class="my-4 text-base font-medium leading-7">Comprehensive round-the-clock support in a safe, comfortable, full of sensory and life-enriching home environment. We offer small group residential and solo placements.
+                    </p>
+                </div>
+                <nuxt-link href="/residential-care" class="flex items-center gap-5 hover:gap-2 transition-all ease-out duration-300 relative text-lg bg-theme hover:bg-theme/80 p-4 rounded-b-2xl ">
+                    Discover More 
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path></svg>
+                </nuxt-link>
+
+            </div>
             <div class="bg-themeVariant/10 p-2 flex flex-col text-white rounded-3xl overflow-hidden">
                 <img src="/assets/images/respite-How-Many-TImes-Can-I-Use-Respite-Care_-1024x683.jpeg" alt=""  class="h-40 border w-full object-cover rounded-t-3xl">
                 <div class="px-4 flex-1 py-4 bg-gray-100 text-gray-800">
@@ -68,19 +82,6 @@
                     </p>
                 </div>
                 <nuxt-link href="/respited-care" class="flex mt-auto items-center gap-5 hover:gap-2 transition-all ease-out duration-300 relative text-lg bg-themeVariant hover:bg-themeVariant/80 p-4 rounded-b-2xl ">
-                    Discover More 
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path></svg>
-                </nuxt-link>
-
-            </div>
-            <div class="bg-themeVariant/10 p-2 flex flex-col text-white rounded-3xl overflow-hidden">
-                <img src="/assets/images/Residential-care-home-provides-personal-care.jpg" alt=""  class="h-40 border w-full object-cover rounded-t-3xl">
-                <div class="px-4 flex-1 py-4 bg-gray-100 text-gray-800">
-                    <h3 class="text-lg md:text-xl whitespace-normal font-semibold">Residential Care</h3>
-                    <p class="my-4 text-base font-medium leading-7">Comprehensive round-the-clock support in a safe, comfortable, full of sensory and life-enriching home environment. We offer small group residential and solo placements.
-                    </p>
-                </div>
-                <nuxt-link href="/residential-care" class="flex items-center gap-5 hover:gap-2 transition-all ease-out duration-300 relative text-lg bg-theme hover:bg-theme/80 p-4 rounded-b-2xl ">
                     Discover More 
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path></svg>
                 </nuxt-link>

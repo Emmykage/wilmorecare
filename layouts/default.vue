@@ -32,8 +32,8 @@
       <svg class="transition-all duration-300 ease-in-out" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1rem" width="1rem" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
     </nuxt-link>
       <ul class="static lg:absolute md:py-10 md:px-4 lg:px-0 bg-themeVariant border border-gray-500/30 border-t-0  rounded sub-list">
-        <li class="hover:bg-theme/50 px-5 "><nuxt-link @click="toggleMenu" to="/privacy-policy" class="whitespace-nowrap mb-3  block py-2 px-2 text-white">Private Policy</nuxt-link></li>
-        <li class="hover:bg-theme/50 px-5 "><nuxt-link @click="toggleMenu" to="/cookies-policy" class="whitespace-nowrap mb-3  block py-2 px-2 text-white">Cookies Policy</nuxt-link></li>
+        <li class="hover:bg-theme/50 px-5 "><nuxt-link @click="toggleMenu" to="/about#Who-We-Are" class="whitespace-nowrap mb-3  block py-2 px-2 text-white">Who we are</nuxt-link></li>
+        <li class="hover:bg-theme/50 px-5 "><nuxt-link @click="toggleMenu" to="/about#core-values" class="whitespace-nowrap mb-3  block py-2 px-2 text-white">Core Values</nuxt-link></li>
 
         
       </ul>
@@ -42,7 +42,7 @@
 
     <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/careers" class="whitespace-nowrap mb-3 block py-2 px-2">Work for us</nuxt-link></li>
     <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/contact-us" class="whitespace-nowrap mb-3 block py-2 px-2">Contact us</nuxt-link></li>
-    <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/get-referals" class="whitespace-nowrap mb-3 block py-2 px-5 bg-[#63b6b3] hover:bg-green-500 rounded-3xl text-white transition-all ease-linear duration-300 hover:text-gray-200">Get Referals</nuxt-link></li>
+    <li class="list whitespace-nowrap mb-3 lg:mb-0 py-0 relative"><nuxt-link @click="toggleMenu" to="/get-referals" class="whitespace-nowrap mb-3 block py-2 px-5 bg-[#63b6b3] hover:bg-green-500 rounded-3xl text-white transition-all ease-linear duration-300 hover:text-gray-200">Make a Referral</nuxt-link></li>
 
 
     
@@ -63,7 +63,7 @@
                 <p>Client Support Email: </p>
       
                 <p>
-                  <a href="mailto:support@WilmoreCare.co.uk" class="hover:underline block">support@WilmoreCare.co.uk</a>
+                  <a href="mailto:admin@WilmoreCare.co.uk" class="hover:underline block">admin@WilmoreCare.co.uk</a>
 
                 </p>
               </div>
@@ -85,7 +85,7 @@
               </span>
               <div>
                 <p>Client Referal Email:</p>
-                <p>referrals@WilmoreCare.co.uk</p>
+                <p>referrals@WilmoreCare.com</p>
                 
               </div>
             </div>
@@ -98,16 +98,16 @@
         <slot />
         <footer class="py-40">
           <div class="text-center">
-              <p class="text-sm text-gray-400">© 2024 WilmoreCare Group - Unit 1, Castleton Court, St Mellons Business Park CF3 0LT. Telephone: 03300 567888
+              <p class="text-sm text-gray-400">© 2024 Wilmore Care Ltd – 18 Thricknells Close, Luton, LU3 3RP. Telephone: 07405141694
               </p>
 
-              <ul class="text-sm my-4 text-red-500 m-auto flex flex-col md:flex-row max-w-4xl flex-wrap gap-3 md:gap-0">
+              <ul class="text-sm my-4 text-red-500 m-auto md:justify-center flex flex-col md:flex-row max-w-4xl flex-wrap gap-3 md:gap-0">
 
                 <li class="border-r border-gray-400 px-4"> <nuxt-link to="/privacy-policy" class="hover:text-theme" >Privacy Policy </nuxt-link> </li>
                 <li class="border-r border-gray-400 px-4"> <nuxt-link to="/privacy-policy" class="hover:text-theme" >Cookie Policy</nuxt-link></li>
                 <li class="border-r border-gray-400 px-4">Modern Slavery Statement</li>
-                <li class="border-r border-gray-400 px-4"> Gender Pay Gap Report</li>
-                <li class=" border-gray-400 px-4"> Sustainability Statement</li>
+                <!-- <li class="border-r border-gray-400 px-4"> Gender Pay Gap Report</li> -->
+                <li class=" border-gray-400 px-4"> Site Map</li>
               </ul>
           </div>
 

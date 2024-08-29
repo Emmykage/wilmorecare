@@ -44,13 +44,13 @@
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-1">
                   CONTACT TELEPHONE NUMBER 1 <span class="text-red-500">*</span>
                 </label>
-                <input v-model="form.contact1" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="contact-1" type="text" placeholder="Contact Number" required>
+                <input v-model="form.contact1" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-500 rounded-full py-4 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="contact-1" type="text" placeholder="Enter Phone Number" required>
               </div>
               <div class="w-full md:w-1/2 px-3">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-2">
                   CONTACT TELEPHONE NUMBER 2 <span class="text-red-500">*</span>
                 </label>
-                <input v-model="form.contact2" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-600 rounded-full py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="contact-2" type="text" placeholder="Enter Contact 2" required>
+                <input v-model="form.contact2" class="appearance-none block w-full bg-gray-50 text-gray-700 border border-cyan-600 rounded-full py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="contact-2" type="text" placeholder="Enter Phone Number" required>
               </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -65,6 +65,12 @@
                   <option value="other">Other Enquiry</option>
                 </select>
               </div>
+            </div>
+            <div class="w-full px-0 mb-6">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="contact-2">
+                Message <span class="text-gray-500">*</span>
+              </label>
+              <textarea v-model="form.message" class="appearance-none block w-full min-h-32 bg-gray-50 text-gray-700 border border-cyan-600 rounded-3xl py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="contact-2" type="text" placeholder="Enter Message"> </textarea>
             </div>
             <button type="submit" class="bg-theme text-white px-8 hover:bg-theme/80 py-3 font-semibold rounded-full">Submit Message</button>
             <p v-if="submissionStatus === 'success'" class="text-green-600 mt-4">Thank you for your message!</p>
@@ -116,7 +122,8 @@ export default {
         email: '',
         contact1: '',
         contact2: '',
-        enquiryType: ''
+        enquiryType: '',
+        message: ""
       },
       submissionStatus: ''
     }
@@ -152,7 +159,8 @@ export default {
         email: '',
         contact1: '',
         contact2: '',
-        enquiryType: ''
+        enquiryType: '',
+        message: " "
       };
     }
   }

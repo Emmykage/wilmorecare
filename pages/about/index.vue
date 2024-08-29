@@ -18,7 +18,7 @@
 
             <div class="grid md:grid-cols-2 gap-4"> 
               <div>
-                <h2 class="text-4xl font-semibold my-5">Who We Are</h2>
+                <h2 class="text-4xl font-semibold my-5" id="Who-We-Are">Who We Are</h2>
 
                 <p class="font-normal text-lg leading-8">
                   At Wilmore, we specialise in working with adults that have a diverse range of needs specific to each of them, including autism, learning disabilities, physical disabilities, sensory impairments (sensory processing needs), mental health support needs, acquired brain injuries and age-related diseases. <br/><br/> Our focus is on enabling individuals to live independently, according to their personal preferences and needs, in a supportive and caring environment.
@@ -109,7 +109,7 @@
             <img src="/assets/images/about-us/OUR-COMMITMENT.jpeg" alt="">
           </div>
           <div>
-            <h2 class="text-3xl text-center font-semibold text-gray-50">Our Core Values</h2>
+            <h2 class="text-3xl text-center font-semibold text-gray-50" id="core-values">Our Core Values</h2>
 
             <ul class="text-gray-100 px-4">
               <li class="my-10">
