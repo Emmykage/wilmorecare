@@ -1,14 +1,55 @@
 <template>
     <main class="pt-[320px] md:pt-56">
+        <div class="bg-green-100 flex h-[650px] relative overflow-hidden">
+            <div class="slider w-[500%] flex h-full absolute top-0 left-0 ">
 
-                <div class="bg-green-500 h-[650px] bg-hero relative">
-                    <div class="max-w-lg py-20 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
-                        <h3 class="text-2xl mb-3 font-semibold">  Are you looking to place someone?</h3>
-                            <p>We are experts in supporting individuals with complex mental health conditions and behaviours that may challenge.</p>
-        
-                    </div>
-                  
-                </div> 
+            <div class="slide slide-1 relative h-full w-ful">
+                <div class="max-w-lg py-10 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
+                    <h3 class="text-2xl mb-3 font-semibold">  Seeking the best care for someone with complex needs?</h3>
+                        <p>We provide expert solutions for individuals facing mental health challenges and behavioral difficulties</p>
+    
+                </div>
+              
+            </div> 
+            <div class="slide slide-2 relative h-full w-ful">
+                <div class="max-w-lg py-10 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
+                    <h3 class="text-2xl mb-3 font-semibold">  Looking for tailored support for a loved one?</h3>
+                        <p> Our specialists are dedicated to helping individuals manage complex mental health conditions and challenging behaviors.</p>
+    
+                </div>
+              
+            </div> 
+
+            <div class=" slide slide-3 relative h-full bg-green-">
+                <div class="max-w-lg py-10 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
+                    <h3 class="text-2xl mb-3 font-semibold">  Need professional care for someone with unique needs?</h3>
+                        <p>We excel in providing personalized support for individuals with mental health challenges and behavioral issues.</p>
+    
+                </div>
+              
+            </div> 
+
+            <div class="slide slide-4 relative h-full bg-blue-">
+                <div class="max-w-lg py-10 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
+                    <h3 class="text-2xl mb-3 font-semibold"> Are you searching for the right fit in care? </h3>
+                        <p>We are committed to supporting individuals with complex mental health concerns and behaviors that require expert attention</p>
+    
+                </div>
+              
+            </div> 
+            <div class="slide slide-5 relative h-full bg-blue-">
+                <div class="max-w-lg py-10 px-4 rounded-tl-3xl rounded-tr-3xl absolute bottom-0 md:left-20 bg-orange-600/60 text-white">
+                    <h3 class="text-2xl mb-3 font-semibold">  Do you need assistance finding the right support?</h3>
+                        <p>Our team specializes in helping individuals with unique mental health needs and challenging behaviors</p>
+    
+                </div>
+              
+            </div> 
+        </div>
+
+        </div>
+
+             
 
         
 
@@ -168,11 +209,80 @@ export default {
 </script>
 
 <style scoped>
+.slider{
+    animation: slideShow 10s linear infinite;
+}
+.slide{
+    width: 20%;
+ 
+}
 
-.bg-hero{
-    background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/iStock-1200583427-e1715614469710.jpg');;
+.slide-1{
+    background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/iStock-1200583427-e1715614469710.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .slide-2{
+    background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/iStock-116932vvv6327.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .slide-3{
+    background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/iStock-834528716a-scaled-e1687513882760.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .slide-4{
+    background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/iStock-1397412ffg273.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide-5{
+    background: linear-gradient(290deg, #57c0af70, #445ba7ab ), url('/public/background/Intensive-Support-Services-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @keyframes slideShow {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0
+
+    }
+    25%{
+        left: -100%
+
+    }
+    45%{
+        left: -100%
+
+    }
+    50%{
+        left: -200%
+
+    }
+    70%{
+        left: -200%
+
+    }
+    75%{
+        left: -300%
+
+    }
+    95%{
+        left: -300%
+
+    }
+    100%{
+        left: -400%
+
+    }
+    
   }
 
 .card img{
