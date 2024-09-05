@@ -250,10 +250,10 @@ Our team consists of highly trained and experienced healthcare professionals ded
 
     <section class="bg-theme text-white py-44 text-center">
         <div class="text-center max-w-2xl m-auto">
-            <h3 class="text-3xl">Talk to the wilmorecare Group
+            <h3 class="text-3xl">Talk to the wilmore care
             </h3>
             <p class="">
-                If you have any questions about our services including how to make a referral or the career opportunities with WilmoreCare Group please complete our Get in Touch form.
+                If you have any questions about our services including how to make a referral or the career opportunities with Wilmore Care complete our Get in Touch form.
 
 
             </p>

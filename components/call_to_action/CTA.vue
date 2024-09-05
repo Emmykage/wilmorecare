@@ -1,10 +1,10 @@
 <template>
     <section class="bg-theme text-white py-44 text-center px-5">
         <div class="text-center max-w-2xl m-auto">
-            <h3 class="text-3xl">Talk to the WilmoreCare Group team
+            <h3 class="text-3xl">Talk to the Wilmore Care 
             </h3>
             <p class="my-4 text-gray-100">
-                If you have any questions about our services including how to make a referral or the career opportunities with WilmoreCare Group please complete our Get in Touch form.
+                If you have any questions about our services including how to make a referral or the career opportunities with Wilmore Care  please complete our Get in Touch form.
 
 
             </p>
